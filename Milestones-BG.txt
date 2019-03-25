@@ -7,12 +7,12 @@ Week 3/25/19
 	
 
 	Help finish pseudocode for connect algorithm
-	+25
-	
-
-	Help finish prototyping connect algorithm in C++
 	+10
 	
 
+	Help finish prototyping connect algorithm in C++
+	+15
+	
+
 	Start writing python web scraper to gather course info
-	+5
+	+15
