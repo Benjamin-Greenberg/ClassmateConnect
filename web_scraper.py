@@ -3,6 +3,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
 import os
 import time
+import re
 
 
 def main():
@@ -12,7 +13,7 @@ def scraper():
 	driver = webdriver.Chrome(os.getcwd() + "\\chromedriver.exe")
 
 	driver.set_page_load_timeout(10)
-	
+
 	# Entry page
 	driver.get("https://bannerssb.utk.edu/kbanpr/bwckschd.p_disp_dyn_sched")
 	select = Select(driver.find_element_by_name("p_term"))
@@ -26,12 +27,24 @@ def scraper():
 
 	# Subject page
 	course_titles = driver.find_elements_by_class_name('ddtitle')
-	titles = [x.text + '\n' for x in course_titles]
 
-	with open("tmp.txt", 'w') as f:
+	# Place the course titles in a list with only the necessary info
+	titles = [x.text + '\n' for x in course_titles]
+	
+	# Organize info and remove dashes in between data
+	for title in range(len(titles)):
+		tmp = titles[title].split(" - ")
+		tmp[0], tmp[1] = tmp[1], tmp[0]
+		tmp[1] = re.sub(' ', '_', tmp[1])
+		tmp[2] = re.sub(' ', '_', tmp[2])
+		tmp = " ".join(tmp)
+		titles[title] = re.sub(' - ', '', tmp)
+
+
+	with open("courses.txt", 'w') as f:
 		f.writelines(titles)
 
-	time.sleep(10)
+	time.sleep(4)
 	driver.quit()
 
 
