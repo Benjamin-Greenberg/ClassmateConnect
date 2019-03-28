@@ -25,7 +25,6 @@ class User{
 
 	public:
 	User(string name, string netid, string email, string phone_number);
-	//~User();
 
 	void addCourse(int, Course *);
 	void print();
@@ -41,7 +40,6 @@ class Course{
 
 	public:
 	Course(int crn, string name, string number, string section);
-	//~Course();
 
 	void addStudents(map<User*, int>&);
 	void addUser(User *);
@@ -61,7 +59,6 @@ int main(int argc, char *argv[]){
 	map<int, Course *>::iterator mit;
 	map<User *, int> classmates_map;
 	vector<User*> users;
-	//map<User *, int>::iterator cit;
 	User* tmpUser;
 	Course* tmpCourse;
 
@@ -164,12 +161,6 @@ User::User(string netid, string name, string email, string phone_number){
 	this->phone_number = phone_number;
 }
 
-/*
-User::~User(){
-
-}
-*/
-
 void User::addCourse(int crn, Course* course){
 	this->courses[crn] = course;
 }
@@ -184,14 +175,6 @@ Course::Course(int crn, string name, string number, string section){
 	this->number = number;
 	this->section = section;
 }
-
-/*
-Course::~Course(){
-	for(int i=0;i<students.size();i++){
-		delete students.at(i);
-	}
-}
-*/
 
 void Course::addStudents(map<User*, int>& classmates_map){
 	for(int i=0;i<students.size();i++){
