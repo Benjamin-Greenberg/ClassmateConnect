@@ -23,16 +23,12 @@ class User{
 	string phone_number;
 	map <int, Course *> courses;
 
-	//friend Course();
-
 	public:
-	User();
-	//new user
 	User(string name, string netid, string email, string phone_number);
-	~User();
+	//~User();
 
 	void addCourse(int, Course *);
-	string getNetID();
+	void print();
 };
 
 class Course{
@@ -44,33 +40,16 @@ class Course{
 	vector<User*> students;
 
 	public:
-	Course();
 	Course(int crn, string name, string number, string section);
-	~Course();
+	//~Course();
 
-int size(){return students.size();}
 	void addStudents(map<User*, int>&);
 	void addUser(User *);
 };
 
-/*
-// max heap
-class StudentHeap{
-
-	vector<User *> h;
-
-	public:
-	StudentHeap();
-	~StudentHeap();
-
-	void Push(int d);
-	int Pop();
-	int Size();
-	bool Empty();
-	void Print();
-
-};
-*/
+bool cmp(pair<User*,int> &u1, pair<User*, int> &u2){
+	return u1.second < u2.second;
+}
 
 int main(int argc, char *argv[]){
 
@@ -81,7 +60,8 @@ int main(int argc, char *argv[]){
 	map<int, Course *> courses;
 	map<int, Course *>::iterator mit;
 	map<User *, int> classmates_map;
-	vector<pair<User *, int> > classmates_vec;
+	vector<User*> users;
+	//map<User *, int>::iterator cit;
 	User* tmpUser;
 	Course* tmpCourse;
 
@@ -91,7 +71,6 @@ int main(int argc, char *argv[]){
 	}
 
 	courseFile.open(argv[1]);
-	//userFile.open(argv[2], fstream::in | fstream::out);
 	userFile.open(argv[2]);
 
 	//read in courses
@@ -102,12 +81,6 @@ int main(int argc, char *argv[]){
 		courses[crn] = new Course(crn, name, number, section);
 	}
 
-///*
-for(mit=courses.begin();mit!=courses.end();++mit){
-	cout<<mit->first<<"\t"<<mit->second->size()<<endl;
-}
-//*/
-
 	//read in users and add to courses
 	while(getline(userFile, line)){
 
@@ -117,6 +90,8 @@ for(mit=courses.begin();mit!=courses.end();++mit){
 
 		tmpUser = new User(netid, name, email, number);
 
+		users.push_back(tmpUser);
+
 		while(sin >> crn){
 
 			courses[crn]->addUser(tmpUser);
@@ -125,6 +100,9 @@ for(mit=courses.begin();mit!=courses.end();++mit){
 
 		sin.clear();
 	}
+
+	userFile.close();
+	userFile.open(argv[2], ios::out | ios::app);
 
 	//get new user info
 	cout << "Name?\n";
@@ -136,36 +114,47 @@ for(mit=courses.begin();mit!=courses.end();++mit){
 	cout << "Phone Number?\n";
 	cin >> number;
 
+	//write new user to database
+	userFile << netid << " " << name << " " << email << " " << number;
+
 	//searches through classes and adds classmates
 	cout << "Enter courses by CRN\n";
 	while(cin >> crn){
-//cout<<"here\n";
 
-		tmpCourse = courses[crn];
+		if (courses.find(crn) != courses.end()){
 
-		tmpCourse->addStudents(classmates_map);
-//cout<<classmates_map.begin()->first->getNetID()<<"\t"<<classmates_map.begin()->second<<endl;
+			tmpCourse = courses[crn];
+
+			tmpCourse->addStudents(classmates_map);
+		}
+
+		userFile << " " << crn;
 	}
 
+	userFile << endl;
+
 	//turn classmates into heap
-	copy(classmates_map.begin(), classmates_map.end(), classmates_vec.begin());
+	vector<pair<User *, int> > classmates_vec(classmates_map.begin(), classmates_map.end());
+	make_heap(classmates_vec.begin(), classmates_vec.end(), cmp);
 
-for(int i=0;i<classmates_vec.size();i++){
-	cout<<classmates_vec.at(i).first->getNetID()<<"\t"<<classmates_vec.at(i).second<<endl;
-}
+	//output classmate
+	cout<<"Your match is ";
+	classmates_vec.at(0).first->print();
+	cout<<"You have "<<classmates_vec.at(0).second<<" classes in common"<<endl;
+	pop_heap(classmates_vec.begin(), classmates_vec.end());
 
-	//add first class, second, third
-	//map to heap
-	//pop heap
-	//add user to file
+	for(mit=courses.begin();mit!=courses.end();++mit){
+		delete mit->second;
+	}
+
+	for(int i=0;i<users.size();i++){
+		delete users.at(i);
+	}
+
 	courseFile.close();
 	userFile.close();
 
 	return 0;
-}
-
-User::User(){
-
 }
 
 User::User(string netid, string name, string email, string phone_number){
@@ -175,20 +164,18 @@ User::User(string netid, string name, string email, string phone_number){
 	this->phone_number = phone_number;
 }
 
+/*
 User::~User(){
 
 }
+*/
 
 void User::addCourse(int crn, Course* course){
 	this->courses[crn] = course;
 }
 
-string User::getNetID(){
-	return netid;
-}
-
-Course::Course(){
-
+void User::print(){
+	printf("%s\nPhone Number:%s\nEmail:%s\n", name.c_str(), phone_number.c_str(), email.c_str());
 }
 
 Course::Course(int crn, string name, string number, string section){
@@ -198,29 +185,18 @@ Course::Course(int crn, string name, string number, string section){
 	this->section = section;
 }
 
-Course::~Course(){
-
-}
-
-void Course::addStudents(map<User*, int>& classmates_map){
-
 /*
-map<User*,int>::iterator mit;
-for(mit=classmates_map.begin();mit!=classmates_map.end();mit++){
-	cout<<mit->first->getNetID()<<"\t"<<mit->second<<endl;
+Course::~Course(){
+	for(int i=0;i<students.size();i++){
+		delete students.at(i);
+	}
 }
 */
-cout<<"here3\n";
-cout<<students.size()<<endl;
-cout<<"here4\n";
-	int i;
-	for(i=0;i<students.size();i++){
 
-//cout<<"here2\n";
+void Course::addStudents(map<User*, int>& classmates_map){
+	for(int i=0;i<students.size();i++){
 		classmates_map[students.at(i)]++;
 	}
-
-
 }
 
 void Course::addUser(User* user){
