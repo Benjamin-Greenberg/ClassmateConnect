@@ -41,6 +41,7 @@ class Course{
 	string name;
 	string number;
 	string section;
+	//map <string, User *> students;
 	vector<User*> students;
 
 	public:
@@ -48,9 +49,8 @@ class Course{
 	Course(int crn, string name, string number, string section);
 	~Course();
 
-int size(){return students.size();}
 	void addStudents(map<User*, int>&);
-	void addUser(User *);
+	void addUser(string, User *);
 };
 
 /*
@@ -79,7 +79,7 @@ int main(int argc, char *argv[]){
 	int crn;
 	string name, number, section, line, email, netid;
 	map<int, Course *> courses;
-	map<int, Course *>::iterator mit;
+	//map<int, Course *>::iterator mit;
 	map<User *, int> classmates_map;
 	vector<pair<User *, int> > classmates_vec;
 	User* tmpUser;
@@ -102,11 +102,11 @@ int main(int argc, char *argv[]){
 		courses[crn] = new Course(crn, name, number, section);
 	}
 
-///*
+/*
 for(mit=courses.begin();mit!=courses.end();++mit){
-	cout<<mit->first<<"\t"<<mit->second->size()<<endl;
+	cout<<mit->first<<endl;
 }
-//*/
+*/
 
 	//read in users and add to courses
 	while(getline(userFile, line)){
@@ -119,7 +119,7 @@ for(mit=courses.begin();mit!=courses.end();++mit){
 
 		while(sin >> crn){
 
-			courses[crn]->addUser(tmpUser);
+			courses[crn]->addUser(netid, tmpUser);
 			tmpUser->addCourse(crn, courses[crn]);
 		}
 
@@ -139,7 +139,7 @@ for(mit=courses.begin();mit!=courses.end();++mit){
 	//searches through classes and adds classmates
 	cout << "Enter courses by CRN\n";
 	while(cin >> crn){
-//cout<<"here\n";
+cout<<"here\n";
 
 		tmpCourse = courses[crn];
 
@@ -204,25 +204,21 @@ Course::~Course(){
 
 void Course::addStudents(map<User*, int>& classmates_map){
 
-/*
 map<User*,int>::iterator mit;
 for(mit=classmates_map.begin();mit!=classmates_map.end();mit++){
-	cout<<mit->first->getNetID()<<"\t"<<mit->second<<endl;
+cout<<mit->first->getNetID()<<"\t"<<mit->second<<endl;
 }
-*/
-cout<<"here3\n";
-cout<<students.size()<<endl;
-cout<<"here4\n";
 	int i;
 	for(i=0;i<students.size();i++){
 
-//cout<<"here2\n";
+cout<<"here2\n";
 		classmates_map[students.at(i)]++;
 	}
 
 
 }
 
-void Course::addUser(User* user){
+void Course::addUser(string netid, User* user){
+	//this->students[netid] = user;
 	students.push_back(user);
 }
