@@ -17,9 +17,15 @@ driver.find_element_by_xpath("//input[@type='submit']").click()
 
 # Secondary page
 select = Select(driver.find_element_by_xpath("//select[@name='sel_subj']"))
+
+# Place following code in block comment when testing, will take a long time otherwise
 options = [option.text for option in select.options]
 for option in options:
 	select.select_by_visible_text(option)
+
+# Uncomment line below for testing purposes
+# select.select_by_visible("Computer Science")
+
 driver.find_element_by_xpath("//input[@type='submit']").click()
 
 # Subject page
