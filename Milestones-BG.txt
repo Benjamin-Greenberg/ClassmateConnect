@@ -5,3 +5,5 @@ Rubric for week 3/25/19 - 3/29/19:
 +10 Implement temporary storage for users and classes with text files.
 +10 Help finish prototyping connect algorithm in C++
 	
+	
+This challenge was relatively simple since we were able to divide up the work based on our strengths for this first week. We collaborated with each other over Discord whenver we were planning our next steps or when one of us needed help on our respective portions. When I was building the web scraper, we would work out what I needed to do at various points to get the data we needed and how to format that data. When Daniel was having issues with a bug, we got on Discord and eventually figured out what was going on and how to fix it. 
