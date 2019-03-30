@@ -6,7 +6,7 @@ import time
 import re
 
 
-
+# chromedriver.exe available in git repo
 driver = webdriver.Chrome(os.getcwd() + "\\chromedriver.exe")
 
 # Entry page
