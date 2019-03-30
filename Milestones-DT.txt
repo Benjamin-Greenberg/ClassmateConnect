@@ -1,0 +1,6 @@
+Milestones for Classmate Connect - Daniel Troutman
+
+Rubric for week 3/25/19 - 3/29/19:
++25 Working prototype that finds classmates that share classes with the user.
++10 Implement some sort of storage for users and classes.
++5 Development on a program to grab all the course info from public catalog of UTK courses.

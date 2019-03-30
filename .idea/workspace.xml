@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecc48d19-a832-455b-b700-24a2c9cef1f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Milestones-BG.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Milestones-DT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connect.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmpclass.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_scraper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassmateConnect/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClassmateConnect/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassmateConnect/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClassmateConnect/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect" beforeDir="false" afterPath="$PROJECT_DIR$/connect" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/connect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect-app/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +53,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connect/models.py">
+        <entry file="file://$PROJECT_DIR$/connect-app/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="28" selection-start-column="28" selection-end-column="28" />
@@ -39,16 +62,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/connect/connect.py">
+        <entry file="file://$PROJECT_DIR$/connect-app/connect.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connect/validators.py">
+        <entry file="file://$PROJECT_DIR$/connect-app/validators.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
@@ -85,9 +108,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="580" />
-    <option name="y" value="-30" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="630" />
+    <option name="y" value="-9" />
     <option name="width" value="1100" />
     <option name="height" value="870" />
   </component>
@@ -113,12 +136,12 @@
             <path>
               <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
               <item name="ClassmateConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="connect" type="462c0819:PsiDirectoryNode" />
+              <item name="connect-app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
               <item name="ClassmateConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="connect" type="462c0819:PsiDirectoryNode" />
+              <item name="connect-app" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -193,7 +216,7 @@
       <updated>1553867823642</updated>
       <workItem from="1553867965812" duration="10099000" />
       <workItem from="1553980439423" duration="196000" />
-      <workItem from="1553980920888" duration="2003000" />
+      <workItem from="1553980920888" duration="2758000" />
     </task>
     <task id="LOCAL-00001" summary="Added Django prototype">
       <created>1553982111421</created>
@@ -206,7 +229,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12298000" />
+    <option name="totallyTimeSpent" value="13053000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -218,23 +241,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.32956153" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4113475" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32956153" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" weight="0.32956153" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32956153" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" visible="true" weight="0.2602546" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" visible="true" weight="0.2602546" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" visible="true" weight="0.2602546" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.2602546" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32978722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -251,7 +274,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added Django prototype" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/connect/views.py">
+    <entry file="file://$PROJECT_DIR$/connect-app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
@@ -261,7 +284,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect/urls.py">
+    <entry file="file://$PROJECT_DIR$/connect-app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
@@ -281,14 +304,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect/models.py">
+    <entry file="file://$PROJECT_DIR$/connect-app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect/validators.py">
+    <entry file="file://$PROJECT_DIR$/connect-app/validators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
@@ -298,10 +321,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect/connect.py">
+    <entry file="file://$PROJECT_DIR$/connect.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect-app/connect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
