@@ -1,4 +1,4 @@
-CRN,TITLE,COURSE_NUMBER,SECTION
+crn,title,course_number,section
 42775,Intro_Computers/Computing,COSC_100,1
 42776,Introduction/Computer_Science,COSC_102,1
 42777,Introduction/Computer_Science,COSC_102,2
