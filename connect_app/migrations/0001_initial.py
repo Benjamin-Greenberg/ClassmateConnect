@@ -34,6 +34,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='course',
             name='students',
-            field=models.ManyToManyField(to='connect-app.Student'),
+            field=models.ManyToManyField(to='connect_app.Student'),
         ),
     ]

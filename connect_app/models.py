@@ -6,7 +6,7 @@ class Course(models.Model):
     crn = models.IntegerField(validators=[v.valid_crn])
     title = models.CharField(max_length=50)
     course_number = models.CharField(max_length=10)
-    section = models.IntegerField
+    section = models.CharField(max_length=10)
     students = models.ManyToManyField('Student', related_name="courses")
 
     def __str__(self):

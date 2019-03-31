@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class ConnectConfig(AppConfig):
-    name = 'connect-app'
+    name = 'connect_app'
