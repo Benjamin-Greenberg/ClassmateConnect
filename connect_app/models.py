@@ -1,5 +1,5 @@
 from django.db import models
-from django.forms import forms
+
 
 from . import validators as v
 
@@ -17,7 +17,7 @@ class Course(models.Model):
 
 class Student(models.Model):
     name = models.CharField(max_length=50)
-    netId = models.CharField(max_length=20)
+    netId = models.CharField(max_length=20, primary_key=True)
     email = models.CharField(max_length=50)
     phone = models.CharField(max_length=10)
 
