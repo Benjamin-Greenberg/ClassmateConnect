@@ -1,0 +1,103 @@
+Intro Computers/Computing - 42775 - COSC 100 - 001
+Introduction/Computer Science - 42776 - COSC 102 - 001
+Introduction/Computer Science - 42777 - COSC 102 - 002
+Introduction/Computer Science - 42778 - COSC 102 - 003
+Introduction/Computer Science - 42779 - COSC 102 - 004
+Introduction/Computer Science - 42780 - COSC 102 - 005
+Introduction/Computer Science - 46095 - COSC 102 - 006
+Introduction/Computer Science - 46665 - COSC 102 - 007
+Introduction/Computer Science - 46666 - COSC 102 - 008
+Introduction/Computer Science - 46682 - COSC 102 - 009
+Introduction/Computer Science - 46688 - COSC 102 - 010
+Computer Organization - 48924 - COSC 130 - 001
+Computer Organization - 48925 - COSC 130 - 002
+Computer Organization - 48926 - COSC 130 - 003
+Computer Organization - 48928 - COSC 130 - 004
+Data Structures/Algorithms I - 42781 - COSC 140 - 001
+Data Structures/Algorithms I - 42782 - COSC 140 - 002
+Data Structures/Algorithms I - 44988 - COSC 140 - 003
+Data Structures/Algorithms II - 42783 - COSC 302 - 001
+Data Structures/Algorithms II - 42784 - COSC 302 - 002
+Data Structures/Algorithms II - 48296 - COSC 302 - 003
+Hon: Data Struct/Algorithms II - 48669 - COSC 307 - 001
+Hon: Data Struct/Algorithms II - 49114 - COSC 307 - 002
+Hon: Data Struct/Algorithms II - 49852 - COSC 307 - 003
+Discrete Structures - 42785 - COSC 311 - 001
+Algorithm Analysis/Automata - 47875 - COSC 312 - 001
+Honors: Discrete Structures - 47783 - COSC 317 - 001
+Software Engineering - 50657 - COSC 340 - 001
+Systems Programming - 42786 - COSC 360 - 001
+Systems Programming - 45591 - COSC 360 - 002
+Systems Programming - 52094 - COSC 360 - 003
+Operating Systems - 49851 - COSC 361 - 001
+Introduction to Cybersecurity - 52760 - COSC 366 - 001
+Junior Seminar - 52755 - COSC 395 - 001
+Senior Design Theory - 47181 - COSC 401 - 001
+Intro/Machine Learning - 44993 - COSC 425 - 001
+Fund of Digital Archeology - 48921 - COSC 445 - 001
+Compilers - 46486 - COSC 461 - 001
+Parallel Programming - 45592 - COSC 462 - 001
+Numerical Analysis - 45595 - COSC 471 - 002
+Applied Cryptography - 49101 - COSC 483 - 001
+Unconventional Computation - 42789 - COSC 494 - 001
+Human-Factors in Comp.Security - 42790 - COSC 494 - 002
+Adv. Algorithm & Programming - 42791 - COSC 494 - 003
+Bioinformatics - 47275 - COSC 494 - 004
+Special Topics - 47896 - COSC 494 - 005
+Special Topics - 52069 - COSC 494 - 006
+Thesis - 42792 - COSC 500 - 001
+Thesis - 42793 - COSC 500 - 002
+Thesis - 42794 - COSC 500 - 003
+Thesis - 42795 - COSC 500 - 004
+Thesis - 42796 - COSC 500 - 005
+Thesis - 42797 - COSC 500 - 006
+Thesis - 42798 - COSC 500 - 007
+Thesis - 42799 - COSC 500 - 008
+Thesis - 42800 - COSC 500 - 009
+Thesis - 42801 - COSC 500 - 010
+Thesis - 42802 - COSC 500 - 011
+Thesis - 42803 - COSC 500 - 012
+Thesis - 42804 - COSC 500 - 013
+Thesis - 42805 - COSC 500 - 014
+Thesis - 42806 - COSC 500 - 015
+Thesis - 42807 - COSC 500 - 016
+Thesis - 42808 - COSC 500 - 017
+Thesis - 45001 - COSC 500 - 018
+Thesis - 45004 - COSC 500 - 019
+Thesis - 52097 - COSC 500 - 020
+Registration/Use of Facilities - 42811 - COSC 502 - 001
+Machine Learning - 52852 - COSC 522 - 001
+Computer Systems Organization - 45017 - COSC 530 - 001
+Fndamntls of Digital Archeolgy - 48923 - COSC 545 - 001
+Numerical Mathematics I - 41357 - COSC 571 - 001
+Foundations - 45023 - COSC 580 - 001
+Applied Cryptography - 49102 - COSC 583 - 001
+Independent Study - 42813 - COSC 593 - 001
+Unconventional Computation - 42816 - COSC 594 - 001
+Human-Factors in Comp.Security - 42817 - COSC 594 - 002
+Adv. Algorithm & Programming - 50223 - COSC 594 - 003
+Bioinformatics - 52068 - COSC 594 - 004
+Special Topics - 52067 - COSC 594 - 005
+Special Topics - 46143 - COSC 594 - 006
+Special Topics - 48476 - COSC 594 - 007
+Special Topics - 52345 - COSC 594 - 009
+Doctoral Research/Dissertation - 42818 - COSC 600 - 001
+Doctoral Research/Dissertation - 42819 - COSC 600 - 002
+Doctoral Research/Dissertation - 42820 - COSC 600 - 003
+Doctoral Research/Dissertation - 42821 - COSC 600 - 004
+Doctoral Research/Dissertation - 42822 - COSC 600 - 005
+Doctoral Research/Dissertation - 42823 - COSC 600 - 006
+Doctoral Research/Dissertation - 42824 - COSC 600 - 007
+Doctoral Research/Dissertation - 42825 - COSC 600 - 008
+Doctoral Research/Dissertation - 42826 - COSC 600 - 009
+Doctoral Research/Dissertation - 42827 - COSC 600 - 010
+Doctoral Research/Dissertation - 42828 - COSC 600 - 011
+Doctoral Research/Dissertation - 42829 - COSC 600 - 012
+Doctoral Research/Dissertation - 42830 - COSC 600 - 013
+Doctoral Research/Dissertation - 42831 - COSC 600 - 014
+Doctoral Research/Dissertation - 42832 - COSC 600 - 015
+Doctoral Research/Dissertation - 42833 - COSC 600 - 016
+Doctoral Research/Dissertation - 42834 - COSC 600 - 017
+Doctoral Research/Dissertation - 45597 - COSC 600 - 018
+Doctoral Research/Dissertation - 46130 - COSC 600 - 019
+Doctoral Research/Dissertation - 46729 - COSC 600 - 020
