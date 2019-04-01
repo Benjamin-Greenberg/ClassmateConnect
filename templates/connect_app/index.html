@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses Index</title>
+</head>
+<body>
+    {% if courses %}
+        <ul>
+            {% for course in courses %}
+                <li><a href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
