@@ -9,13 +9,13 @@
     <ul>
         <li>{{ course.crn }}</li>
         <li>{{ course.course_number }}</li>
-        <!--<li>{{ course.section }}</li> -->
+        <li>{{ course.section_number }}</li>
     </ul>
     <h3>Students</h3>
     {% if course.students %}
         <ul>
-            {% for student in course.students %}
-                <li>{{ student.name }}</li>
+            {% for student in course.students.all %}
+                <li> student.name </li>
             {% endfor %}
         </ul>
     {% endif %}

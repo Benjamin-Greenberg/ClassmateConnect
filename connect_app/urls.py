@@ -6,5 +6,5 @@ from . import views
 app_name = 'connect_app'
 urlpatterns = [
     path('', views.index, name='index'),
-    path('<int:course_crn>/', views.detail, name='detail'),
+    path('<int:crn>/', views.detail, name='detail'),
 ]

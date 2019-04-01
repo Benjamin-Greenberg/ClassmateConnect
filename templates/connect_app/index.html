@@ -8,6 +8,7 @@
     {% if courses %}
         <ul>
             {% for course in courses %}
+                <h2> {{ course.title }}</h2>
                 <li><a href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
             {% endfor %}
         </ul>

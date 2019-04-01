@@ -5,10 +5,10 @@ from . import validators as v
 
 
 class Course(models.Model):
-    crn = models.IntegerField(validators=[v.valid_crn])
-    title = models.CharField(max_length=50)
-    course_number = models.CharField(max_length=10)
-    # FIXME section = models.IntegerField()
+    crn = models.IntegerField(validators=[v.valid_crn], default=00000, primary_key=True)
+    title = models.CharField(max_length=50, default="Title")
+    course_number = models.CharField(max_length=10, default="Major XXX")
+    section_number = models.IntegerField(default=000)
     students = models.ManyToManyField('Student', related_name="courses", blank=True)
 
     def __str__(self):
