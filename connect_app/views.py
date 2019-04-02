@@ -8,7 +8,15 @@ def index(request):
     return render(request, 'connect_app/index.html', context)
 
 
+def course_index(request):
+    courses = Course.objects.all()
+    context = {'courses': courses}
+    return render(request, 'connect_app/index.html', context)
+
+
 def detail(request, crn):
     course = get_object_or_404(Course, pk=crn)
     context = {'course': course}
     return render(request, 'connect_app/detail.html', context)
+
+

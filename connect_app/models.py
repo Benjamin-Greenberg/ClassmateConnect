@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.base_user import AbstractBaseUser
 from . import validators as v
 
 
@@ -16,11 +17,15 @@ class Course(models.Model):
         return self.title
 
 
-class Student(models.Model):
+class Student(AbstractBaseUser):
     name = models.CharField(max_length=50)
-    netId = models.CharField(max_length=20, primary_key=True)
+    netId = models.CharField(max_length=20, primary_key=True, unique=True)
     email = models.CharField(max_length=50)
     phone = models.CharField(max_length=10)
+
+    USERNAME_FIELD = 'netId'
+    EMAIL_FIELD = 'email'
+    REQUIRED_FIELDS = ['name']
 
     def __str__(self):
         return self.name
