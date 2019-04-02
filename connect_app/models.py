@@ -1,6 +1,4 @@
 from django.db import models
-
-
 from . import validators as v
 
 
@@ -10,6 +8,9 @@ class Course(models.Model):
     course_number = models.CharField(max_length=10, default="Major XXX")
     section_number = models.IntegerField(default=000)
     students = models.ManyToManyField('Student', related_name="courses", blank=True)
+
+    class Meta:
+        ordering = ['course_number']
 
     def __str__(self):
         return self.title
