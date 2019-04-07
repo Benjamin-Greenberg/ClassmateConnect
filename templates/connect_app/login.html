@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Student Login</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Welcome</h1>
+    <p>This is the login page for students</p>
+    <h2>Login</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+        <input type="hidden" name="next" value="{% url 'connect_app:profile' %}"/>
+    </form>
+</div>
+{% endblock %}

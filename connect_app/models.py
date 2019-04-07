@@ -1,6 +1,8 @@
 from django.db import models
-from django.contrib.auth.base_user import AbstractBaseUser
+from django.contrib.auth.models import AbstractUser
+from django.utils.translation import ugettext_lazy as _
 from . import validators as v
+from .manager import StudentManager
 
 
 class Course(models.Model):
@@ -17,15 +19,16 @@ class Course(models.Model):
         return self.title
 
 
-class Student(AbstractBaseUser):
-    name = models.CharField(max_length=50)
-    netId = models.CharField(max_length=20, primary_key=True, unique=True)
-    email = models.CharField(max_length=50)
-    phone = models.CharField(max_length=10)
+class Student(AbstractUser):
+    username = models.CharField(max_length=10, unique=True)
+    email = models.EmailField(_('email_address'))
+    first_name = models.CharField(max_length=20)
+    last_name = models.CharField(max_length=20)
 
-    USERNAME_FIELD = 'netId'
-    EMAIL_FIELD = 'email'
-    REQUIRED_FIELDS = ['name']
+    USERNAME_FIELD = 'username'
+    REQUIRED_FIELDS = ['email', 'first_name', 'last_name']
+
+    objects = StudentManager()
 
     def __str__(self):
-        return self.name
+        return self.username

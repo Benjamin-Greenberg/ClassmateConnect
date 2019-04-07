@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Courses Index</title>
+    <title>Index Page</title>
 </head>
 <body>
-    {% if courses %}
-        <h2>Courses</h2>
-        <ul>
-            {% for course in courses %}
-                <li><a href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
-            {% endfor %}
-        </ul>
-    {% endif %}
+    <h2>Index Page</h2>
+    <ul>
+        <li><a href="{% url 'connect_app:courses' %}"> Courses Index </a></li>
+        <li><a href="{% url 'connect_app:student_login' %}">Student Login</a></li>
+    </ul>
+
 </body>
 </html>
