@@ -20,10 +20,11 @@ class Course(models.Model):
 
 
 class Student(AbstractUser):
-    username = models.CharField(max_length=10, unique=True)
+    username = models.CharField(max_length=10, unique=True, primary_key=True)
     email = models.EmailField(_('email_address'))
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
+    classmates = models.ManyToManyField('self', blank=True)
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email', 'first_name', 'last_name']

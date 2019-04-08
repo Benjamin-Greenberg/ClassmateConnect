@@ -123,3 +123,7 @@ STATIC_URL = '/static/'
 
 # Custom user class
 AUTH_USER_MODEL = 'connect_app.Student'
+
+# Login/Logout Redirects
+LOGIN_REDIRECT_URL = 'connect_app:profile'
+LOGOUT_REDIRECT_URL = 'connect_app:index'

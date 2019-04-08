@@ -8,7 +8,12 @@
     <h2>Index Page</h2>
     <ul>
         <li><a href="{% url 'connect_app:courses' %}"> Courses Index </a></li>
-        <li><a href="{% url 'connect_app:student_login' %}">Student Login</a></li>
+        {% if user.is_authenticated %}
+            <li><a href="{% url 'logout' %}">Student Login</a></li>
+        {% else %}
+            <li><a href="{% url 'login' %}">Student Login</a></li>
+            <li><a href="{% url 'connect_app:signup' %}">Sign Up</a></li>
+        {% endif %}
     </ul>
 
 </body>

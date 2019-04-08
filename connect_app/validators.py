@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 def valid_crn(crn):
-    if crn < 0 or crn > 50000:
+    if crn < 0 or crn > 100000:
         raise ValidationError(_(f'{crn} is not within the provided bounds'))
 
 

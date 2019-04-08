@@ -12,6 +12,8 @@ urlpatterns = [
     path('courses/', views.course_index, name='courses'),
     # Student Login Page
     path('login/', LoginView.as_view(template_name='connect_app/login.html'), name='student_login'),
+    # Student Sign Up Page
+    path('signup/', views.SignUp.as_view(), name='signup'),
     # Student Profile Page
     path('profile/', views.profile, name='profile'),
     # Course Detail Page

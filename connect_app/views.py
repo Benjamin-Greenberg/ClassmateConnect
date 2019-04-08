@@ -1,5 +1,8 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Course
+from django.views import generic
+from django.urls import reverse_lazy
+from .models import *
+from .forms import StudentCreationForm
 
 
 # Home Index
@@ -21,7 +24,16 @@ def detail(request, crn):
     return render(request, 'connect_app/detail.html', context)
 
 
-# Student Login Page
+# Student Profile Page
 def profile(request):
-    return render(request, 'connect_app/profile.html')
+    if request.user.is_authenticated:
+        return render(request, 'connect_app/profile.html')
+    else:
+        return render(request, 'connect_app/index.html')
 
+
+# Student SignUp Class
+class SignUp(generic.CreateView):
+    form_class = StudentCreationForm
+    success_url = reverse_lazy('login')
+    template_name = 'connect_app/signup.html'

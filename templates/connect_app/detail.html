@@ -15,7 +15,7 @@
     {% if course.students %}
         <ul>
             {% for student in course.students.all %}
-                <li> {{ student.name }} </li>
+                <li> {{ student.username }} </li>
             {% endfor %}
         </ul>
     {% endif %}
