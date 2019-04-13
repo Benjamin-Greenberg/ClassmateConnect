@@ -102,6 +102,7 @@ int main(int argc, char *argv[]){
 	userFile.close();
 	userFile.open(argv[2], ios::out | ios::app);
 
+/*
 	//get new user info
 	cout << "Name?\n";
 	cin >> name;
@@ -111,13 +112,19 @@ int main(int argc, char *argv[]){
 	cin >> email;
 	cout << "Phone Number?\n";
 	cin >> number;
+*/
+	name = "Name_test_Name";
+	netid = "NetID_test_NetID";
+	email = "Email_test_Email";
+	number = "Number_test_Number";
 
 	//write new user to database
-	userFile << netid << " " << name << " " << email << " " << number;
+//	userFile << netid << " " << name << " " << email << " " << number;
 
 	//searches through classes and adds classmates
 	cout << "Enter courses by CRN\n";
-	while(cin >> crn){
+//	while(cin >> crn){
+crn = 42775;
 
 		if (courses.find(crn) != courses.end()){
 
@@ -126,10 +133,10 @@ int main(int argc, char *argv[]){
 			tmpCourse->addStudents(classmates_map);
 		}
 
-		userFile << " " << crn;
-	}
+//		userFile << " " << crn;
+//	}
 
-	userFile << endl;
+//	userFile << endl;
 
 	//turn classmates into heap
 	vector<pair<User *, int> > classmates_vec(classmates_map.begin(), classmates_map.end());
