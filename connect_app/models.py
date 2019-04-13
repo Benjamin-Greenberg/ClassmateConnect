@@ -33,3 +33,11 @@ class Student(AbstractUser):
 
     def __str__(self):
         return self.username
+
+    def add_course(self, crn):
+        course = Course.objects.get(pk=crn)
+        course.students.add(self)
+
+    # Calls connect.cpp to build the list of students w/ similar schedules
+    def connect(self):
+        pass
