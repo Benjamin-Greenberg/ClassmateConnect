@@ -28,6 +28,7 @@ class User{
 
 	void addCourse(int, Course *);
 	void print();
+	string getNetID();
 };
 
 class Course{
@@ -135,10 +136,17 @@ int main(int argc, char *argv[]){
 	make_heap(classmates_vec.begin(), classmates_vec.end(), cmp);
 
 	//output classmate
+
+	//Option 1
+	/*
 	cout<<"Your match is ";
 	classmates_vec.at(0).first->print();
 	cout<<"You have "<<classmates_vec.at(0).second<<" classes in common"<<endl;
 	pop_heap(classmates_vec.begin(), classmates_vec.end());
+	*/
+
+	//Option 2
+	cout<<classmates_vec.at(0).first->getNetID()<<" "<<classmates_vec.at(0).second<<",\n";
 
 	for(mit=courses.begin();mit!=courses.end();++mit){
 		delete mit->second;
@@ -167,6 +175,10 @@ void User::addCourse(int crn, Course* course){
 
 void User::print(){
 	printf("%s\nPhone Number:%s\nEmail:%s\n", name.c_str(), phone_number.c_str(), email.c_str());
+}
+
+string User::getNetID(){
+    return netid;
 }
 
 Course::Course(int crn, string name, string number, string section){
