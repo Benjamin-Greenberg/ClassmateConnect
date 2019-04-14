@@ -18,15 +18,12 @@
         {% endif %}
     </div>
     <div class="align-right">
-        {% if student.classmates %}
             <h3>Students That Share Classes with You:</h3>
             <ul>
-                {% for student, classes in student.temp_classmates %}
-                    <li>{{ student.first_name }} {{ student.last_name }}: {{ classes }}</li>
+                {% for classmate, classes in student.temp_classmates %}
+                    <li>{{ classmate.first_name }} {{ classmate.last_name }}: {{ classes }}</li>
                 {% endfor %}
             </ul>
-
-        {% endif %}
     </div>
     <a href="{% url "logout" %}" class="button">Logout</a>
 
