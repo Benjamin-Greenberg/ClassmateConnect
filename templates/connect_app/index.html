@@ -9,7 +9,7 @@
     <ul>
         <li><a href="{% url 'connect_app:courses' %}"> Courses Index </a></li>
         {% if user.is_authenticated %}
-            <li><a href="{% url 'logout' %}">Student Login</a></li>
+            <li><a href="{% url 'logout' %}">Student Logout</a></li>
         {% else %}
             <li><a href="{% url 'login' %}">Student Login</a></li>
             <li><a href="{% url 'connect_app:signup' %}">Sign Up</a></li>
