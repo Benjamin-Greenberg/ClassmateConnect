@@ -8,7 +8,8 @@
     <h2>Index Page</h2>
     <ul>
         <li><a href="{% url 'connect_app:courses' %}"> Courses Index </a></li>
-        {% if user.is_authenticated %}
+        {% if requst.user.is_authenticated %}
+            <li>Hi {{ request.user.username }}!</li>
             <li><a href="{% url 'logout' %}">Student Logout</a></li>
         {% else %}
             <li><a href="{% url 'login' %}">Student Login</a></li>
