@@ -8,21 +8,21 @@
     <h2>Courses Page</h2>
     <a href="{% url 'connect_app:courses' %}"> Courses Index </a>
     <div class="align-left">
-        {% if request.user.courses %}
-            <h3>{{ request.user.first_name }} {{ request.user.last_name }} Courses:</h3>
+        {% if student.courses %}
+            <h3>{{ student.first_name }} {{ student.last_name }}'s Courses:</h3>
             <ul>
-                {% for course in request.user.courses.all %}
+                {% for course in student.courses.all %}
                     <li><a href="{% url 'connect_app:detail' course.crn %}">{{ course.title }}</a></li>
                 {% endfor %}
             </ul>
         {% endif %}
     </div>
     <div class="align-right">
-        {% if request.user.classmates %}
+        {% if student.classmates %}
             <h3>Students That Share Classes with You:</h3>
             <ul>
-                {% for student in request.user.classmates.all %}
-                    <li>{{ student.first_name }} {{ student.last_name }}: {# Number of Shared Classes #}</li>
+                {% for student, classes in student.temp_classmates %}
+                    <li>{{ student.first_name }} {{ student.last_name }}: {{ classes }}</li>
                 {% endfor %}
             </ul>
 

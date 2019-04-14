@@ -26,8 +26,10 @@ def detail(request, crn):
 
 # Student Profile Page
 def profile(request):
+    student = Student.objects.get(pk=request.user.username)
+    context = {'student': student}
     if request.user.is_authenticated:
-        return render(request, 'connect_app/profile.html')
+        return render(request, 'connect_app/profile.html', context)
     else:
         return render(request, 'connect_app/index.html')
 

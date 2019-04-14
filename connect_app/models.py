@@ -3,6 +3,7 @@ from django.contrib.auth.models import AbstractUser
 from django.utils.translation import ugettext_lazy as _
 from . import validators as v
 from .manager import StudentManager
+from heapq import nsmallest
 
 
 class Course(models.Model):
@@ -25,6 +26,7 @@ class Student(AbstractUser):
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
     classmates = models.ManyToManyField('self', blank=True)
+    temp_classmates = []
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email', 'first_name', 'last_name']
@@ -38,6 +40,20 @@ class Student(AbstractUser):
         course = Course.objects.get(pk=crn)
         course.students.add(self)
 
-    # Calls connect.cpp to build the list of students w/ similar schedules
+    # Function to build the list of students w/ similar schedules
     def connect(self):
-        pass
+        classmates = {}
+
+        for course in self.courses.all():
+            for classmate in course.students.all():
+                if classmate == self:
+                    continue
+                else:
+                    if classmate in classmates.keys():
+                        classmates[classmate] += 1
+                    else:
+                        classmates[classmate] = 1
+
+        heap = [(-value, key) for key, value in classmates.items()]
+        self.temp_classmates = nsmallest(3, heap)
+        self.temp_classmates = [(key, -value) for value, key in self.temp_classmates]
