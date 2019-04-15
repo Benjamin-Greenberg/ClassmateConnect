@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Index Page</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <h2>Index Page</h2>
-    <ul>
-        <li><a href="{% url 'connect_app:courses' %}"> Courses Index </a></li>
-        {% if requst.user.is_authenticated %}
-            <li>Hi {{ request.user.username }}!</li>
-            <li><a href="{% url 'logout' %}">Student Logout</a></li>
-        {% else %}
-            <li><a href="{% url 'login' %}">Student Login</a></li>
-            <li><a href="{% url 'connect_app:signup' %}">Sign Up</a></li>
-        {% endif %}
-    </ul>
-
+    <div id="container">
+        <div id="header">
+            <h2>Classmate Connect</h2>
+        </div>
+        <div id="content">
+            <ul>
+                <li><a href="{% url 'connect_app:courses' %}"> Courses Index </a></li>
+                {% if requst.user.is_authenticated %}
+                    <li>Hi {{ request.user.username }}!</li>
+                    <li><a href="{% url 'logout' %}">Student Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Student Login</a></li>
+                    <li><a href="{% url 'connect_app:signup' %}">Sign Up</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        <div id="footer">
+            <h4>Made by Benjamin Greenberg and Daniel Troutman</h4>
+        </div>
+    </div>
 </body>
 </html>
