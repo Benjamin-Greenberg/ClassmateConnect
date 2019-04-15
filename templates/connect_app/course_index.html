@@ -1,15 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Courses Index</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/course_index.css' %}">
 </head>
 <body>
     {% if courses %}
         <h2>Courses</h2>
         <ul>
             {% for course in courses %}
-                <li><a href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
+                <li><a id="btn" href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
             {% endfor %}
         </ul>
     {% endif %}

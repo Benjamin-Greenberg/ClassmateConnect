@@ -1,32 +1,20 @@
-/*CSS page for Index*/
+/*CSS for course_index page*/
 
-/*HTML Elements*/
 body{
     background-color: lightslategrey;
     font-family: sans-serif;
 }
 
-#header {
-    background-color: darkblue;
-}
-
-h2{
-    color: wheat;
-}
-
 #btn{
-    font: bold 20px "Comic Sans MS";
+    font: bold 10px "Comic Sans MS";
     text-decoration: none;
-    background-color: #EEEEEE;
+    background-color: darkgray;
     border-radius: 4px 4px 4px 4px;
-    color: #333333;
+    color: black;
     padding: 2px 6px 2px 6px;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
-    margin: 10px;
+    margin: 5px;
 }
-
-
-

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index Page</title>
+    <title>Classmate Connect Index</title>
     <link rel="stylesheet" type="text/css" href="{% static 'connect_app/index.css' %}">
 </head>
 <body>
@@ -13,13 +13,13 @@
         </div>
         <div id="content">
             <ul>
-                <li><a href="{% url 'connect_app:courses' %}"> Courses Index </a></li>
+                <li><a href="{% url 'connect_app:courses' %}"><button id="btn"> Courses Index </button></a></li>
                 {% if requst.user.is_authenticated %}
                     <li>Hi {{ request.user.username }}!</li>
-                    <li><a href="{% url 'logout' %}">Student Logout</a></li>
+                    <li><a href="{% url 'logout' %}"><button id="btn"> Student Logout </button></a></li>
                 {% else %}
-                    <li><a href="{% url 'login' %}">Student Login</a></li>
-                    <li><a href="{% url 'connect_app:signup' %}">Sign Up</a></li>
+                    <li><a href="{% url 'login' %}"><button id="btn"> Student Login </button></a></li>
+                    <li><a href="{% url 'connect_app:signup' %}"><button id="btn"> Sign Up </button></a></li>
                 {% endif %}
             </ul>
         </div>
