@@ -5,16 +5,16 @@ body{
     font-family: sans-serif;
 }
 
-#btn{
+#btn {
     font: bold 10px "Comic Sans MS";
     text-decoration: none;
     background-color: darkgray;
     border-radius: 4px 4px 4px 4px;
     color: black;
-    padding: 2px 6px 2px 6px;
+    padding: 10px 6px 10px 6px;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
-    margin: 5px;
 }
+

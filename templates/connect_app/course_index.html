@@ -11,7 +11,7 @@
         <h2>Courses</h2>
         <ul>
             {% for course in courses %}
-                <li><a id="btn" href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
+                <li class="course"><a id="btn" href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
             {% endfor %}
         </ul>
     {% endif %}
