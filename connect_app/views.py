@@ -1,8 +1,9 @@
+import json
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from django.urls import reverse_lazy
 from .models import *
-from .forms import StudentCreationForm
+from .forms import *
 
 
 # Home Index
@@ -40,3 +41,49 @@ class SignUp(generic.CreateView):
     form_class = StudentCreationForm
     success_url = reverse_lazy('login')
     template_name = 'connect_app/signup.html'
+
+
+# Student Change Info Page
+class ChangeInfo(generic.CreateView):
+    form_class = StudentChangeForm
+    success_url = reverse_lazy('profile')
+    template_name = 'connect_app/changeinfo.html'
+
+
+def add_courses(request):
+    if request.method == "POST":
+        student = Student.objects.get(pk=request.user.username)
+        context = {'student': student}
+        form = AddCourses(request.POST)
+        if form.is_valid():
+            courses = form.cleaned_data.get('courses')
+            for course in courses:
+                student.courses.add(Course.objects.get(pk=course))
+
+        return render(request, 'connect_app/profile.html', context)
+    else:
+        context = {
+            'form': AddCourses,
+        }
+        return render(request, 'connect_app/add_courses.html', context)
+
+# Will come back to
+# def remove_courses(request):
+#     student = Student.objects.get(pk=request.user.username)
+#     form = RemoveCourses
+#     form.username =
+#     if request.method == "POST":
+#         context = {'student': student}
+#         form = form(request.POST)
+#         if form.is_valid():
+#             courses = form.cleaned_data.get('courses')
+#             student.courses.remove(*courses)
+#         return render(request, 'connect_app/profile.html', context)
+#     else:
+#         context = {
+#             'form': form,
+#         }
+#         return render(request, 'connect_app/add_courses.html', context)
+#
+
+

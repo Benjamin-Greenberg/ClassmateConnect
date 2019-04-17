@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'connect_app.apps.ConnectConfig',
+    # 'connect_app.models.Student',
 ]
 
 MIDDLEWARE = [

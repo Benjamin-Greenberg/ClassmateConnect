@@ -16,6 +16,8 @@
                 {% endfor %}
             </ul>
         {% endif %}
+        <a href="{% url 'connect_app:add_courses' %}">Add Courses</a> |
+        <a href="{% url 'connect_app:remove_courses' %}">Remove Courses</a> |
     </div>
     <div class="align-right">
             <h3>Students That Share Classes with You:</h3>
@@ -25,6 +27,7 @@
                 {% endfor %}
             </ul>
     </div>
+    <a href="{% url 'connect_app:changeinfo' %}">Change Information</a>
     <a href="{% url "logout" %}" class="button">Logout</a>
 
 {% endblock %}

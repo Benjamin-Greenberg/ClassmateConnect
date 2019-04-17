@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Remove Courses</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Welcome</h1>
+    <p>Remove courses here.</p>
+    <h2>Courses</h2>
+    <form method="POST" name="courses">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Finish</button>
+    </form>
+</div>
+{% endblock %}

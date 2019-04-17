@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Student Change Info</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Welcome</h1>
+    <p>Students can alter their information here.</p>
+    <h2>Sign Up Here</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Finish</button>
+    </form>
+</div>
+{% endblock %}
