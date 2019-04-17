@@ -27,9 +27,6 @@ class AddCourses(forms.Form):
 
 
 class RemoveCourses(forms.Form):
-    username = "temp"
-    options = tuple()
-    courses = None
 
     def __init__(self, *args, **kwargs):
         self.username = kwargs.pop("username")
