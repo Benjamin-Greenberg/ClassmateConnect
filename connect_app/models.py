@@ -53,7 +53,11 @@ class Student(AbstractUser):
                         classmates[classmate] += 1
                     else:
                         classmates[classmate] = 1
+        if len(classmates) < 5:
+            minDisplay = len(classmates)
+        else:
+            minDisplay = 5
 
         heap = [(-value, key) for key, value in classmates.items()]
-        self.temp_classmates = nsmallest(3, heap)
+        self.temp_classmates = nsmallest(minDisplay, heap)
         self.temp_classmates = [(key, -value) for value, key in self.temp_classmates]

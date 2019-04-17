@@ -26,3 +26,18 @@ class AddCourses(forms.Form):
     )
 
 
+class RemoveCourses(forms.Form):
+    username = "temp"
+    options = tuple()
+    courses = None
+
+    def __init__(self, *args, **kwargs):
+        self.username = kwargs.pop("username")
+        self.options = tuple(
+            (course.crn, course.title) for course in Student.objects.get(pk=self.username).courses.all()
+        )
+        super(RemoveCourses, self).__init__(*args, **kwargs)
+        self.fields['courses'] = forms.MultipleChoiceField(
+            widget=forms.CheckboxSelectMultiple,
+            choices=self.options
+        )

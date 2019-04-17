@@ -67,23 +67,24 @@ def add_courses(request):
         }
         return render(request, 'connect_app/add_courses.html', context)
 
-# Will come back to
-# def remove_courses(request):
-#     student = Student.objects.get(pk=request.user.username)
-#     form = RemoveCourses
-#     form.username =
-#     if request.method == "POST":
-#         context = {'student': student}
-#         form = form(request.POST)
-#         if form.is_valid():
-#             courses = form.cleaned_data.get('courses')
-#             student.courses.remove(*courses)
-#         return render(request, 'connect_app/profile.html', context)
-#     else:
-#         context = {
-#             'form': form,
-#         }
-#         return render(request, 'connect_app/add_courses.html', context)
-#
+
+def remove_courses(request):
+    student = Student.objects.get(pk=request.user.username)
+    if request.method == "POST":
+        context = {'student': student}
+        form = RemoveCourses(request.POST, username=request.user.username)
+        if form.is_valid():
+            courses = form.cleaned_data.get('courses')
+            if courses is not None:
+                for course in courses:
+                    student.courses.remove(course)
+        return render(request, 'connect_app/profile.html', context)
+    else:
+        form = RemoveCourses(username=request.user.username)
+        context = {
+            'form': form,
+        }
+        return render(request, 'connect_app/add_courses.html', context)
+
 
 
