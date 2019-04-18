@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Courses Index</title>
+{#    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/reset.css' %}">#}
     <link rel="stylesheet" type="text/css" href="{% static 'connect_app/course_index.css' %}">
 </head>
 <body>
@@ -11,7 +12,7 @@
         <h2>Courses</h2>
         <ul>
             {% for course in courses %}
-                <li class="course"><a id="btn" href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
+                <li><a id="btn" href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
             {% endfor %}
         </ul>
     {% endif %}

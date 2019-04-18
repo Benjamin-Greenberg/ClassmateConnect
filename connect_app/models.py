@@ -17,7 +17,7 @@ class Course(models.Model):
         ordering = ['course_number']
 
     def __str__(self):
-        return self.title
+        return self.title + ' ' + self.crn
 
 
 class Student(AbstractUser):
