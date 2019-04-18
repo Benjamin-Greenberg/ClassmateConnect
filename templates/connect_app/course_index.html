@@ -4,17 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Courses Index</title>
-{#    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/reset.css' %}">#}
+    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/reset.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'connect_app/course_index.css' %}">
 </head>
 <body>
     {% if courses %}
-        <h2>Courses</h2>
-        <ul>
-            {% for course in courses %}
-                <li><a id="btn" href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
-            {% endfor %}
-        </ul>
+        <div id="header">
+            <h2>Classmate Connect</h2>
+        </div>
+        <div id="container">
+            <h3>Courses</h3>
+            <ul>
+                {% for course in courses %}
+                    <li><a id="btn" href="{% url 'connect_app:detail' course.crn%}">{{ course.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div id="footer">
+            <h4>Made by Benjamin Greenberg and Daniel Troutman</h4>
+        </div>
     {% endif %}
 </body>
 </html>
