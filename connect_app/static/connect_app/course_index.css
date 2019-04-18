@@ -1,7 +1,7 @@
 /*CSS for course_index page*/
 
 body{
-    background-color: #FFFFFF;
+    background-color: lightslategrey;
     font-family: sans-serif;
     height: 100%;
 }
@@ -12,9 +12,8 @@ body{
     height: 55px;
     text-align: left;
     color: white;
-    background-color: #77A6F7;
+    background-color: #0072C6;
 }
-
 
 #header h2{
     font-size: 40px;
@@ -23,21 +22,30 @@ body{
 
 #container{
     padding-top: 60px;
+    padding-left: 10px;
 }
+
+#container h3{
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+}
+
 
 
 #btn {
     font: bold 10px "Comic Sans MS";
     text-decoration: none;
-    background-color: darkgray;
+    background-color: #0072C6;
+    color: white;
     border-radius: 4px 4px 4px 4px;
-    color: black;
     padding: 5px 3px 5px 3px;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
     display: inline-block;
+    margin: 3px;
 }
 
 #footer{
@@ -48,7 +56,7 @@ body{
     height: 30px;
     text-align: right;
     color: white;
-    background-color: #77A6F7;
+    background-color: #0072C6;
 }
 
 #footer h4 {

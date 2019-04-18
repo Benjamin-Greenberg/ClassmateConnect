@@ -2,7 +2,7 @@
 
 /*HTML Elements*/
 body{
-    background-color: #FFFFFF;
+    background-color: lightslategray;
     font-family: sans-serif;
     height: 100%;
 }
@@ -13,7 +13,7 @@ body{
     height: 55px;
     text-align: left;
     color: white;
-    background-color: #77A6F7;
+    background-color: #0072C6;
 }
 
 #header h2{
@@ -44,9 +44,10 @@ body{
     font-size: 22px;
     color: white;
     text-align: center;
-    background: #77A6F7;
+    background: #0072C6;
     border: 0;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 #footer{
@@ -57,7 +58,7 @@ body{
     height: 30px;
     text-align: right;
     color: white;
-    background-color: #77A6F7;
+    background-color: #0072C6;
 }
 
 #footer h4 {
