@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from typing import List
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -25,7 +27,8 @@ SECRET_KEY = 'd367d8339@5=23$07fxm5zd7-^r*xn8eht9w!do*0jl_9sr$dy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.16.0.7', 'localhost', '127.0.0.1']
+# Add IP Address here to allow access over LAN
+ALLOWED_HOSTS = ['172.16.0.7', '216.96.180.34', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -38,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'connect_app.apps.ConnectConfig',
-    # 'connect_app.models.Student',
 ]
 
 MIDDLEWARE = [

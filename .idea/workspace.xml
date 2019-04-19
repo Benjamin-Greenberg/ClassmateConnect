@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecc48d19-a832-455b-b700-24a2c9cef1f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/connect_app/static/connect_app/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ClassmateConnect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ClassmateConnect.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connect_app/static/connect_app/course_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/static/connect_app/course_index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassmateConnect/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClassmateConnect/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_app/management/commands/populate_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/management/commands/populate_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_app/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_app/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/connect_app/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/connect_app/profile.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,56 +57,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="65" column="1" lean-forward="true" selection-start-line="52" selection-end-line="65" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/course_index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/connect_app/profile.html">
+        <entry file="file://$PROJECT_DIR$/ClassmateConnect/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="89" lean-forward="true" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/connect_app/course_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/connect_app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/profile.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+            <state relative-caret-position="-1194">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+              <folding>
+                <element signature="e#317#326#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,6 +85,7 @@
       <find>connect</find>
       <find>request.user</find>
       <find>class=&quot;button&quot;</find>
+      <find>allo</find>
     </findStrings>
     <replaceStrings>
       <replace>student</replace>
@@ -145,43 +110,41 @@
         <option value="$PROJECT_DIR$/courses.csv" />
         <option value="$PROJECT_DIR$/connect_app/connect.py" />
         <option value="$PROJECT_DIR$/connect_app/management/commands/populate_bd.py" />
-        <option value="$PROJECT_DIR$/connect_app/manager.py" />
-        <option value="$PROJECT_DIR$/connect_app/admin.py" />
         <option value="$PROJECT_DIR$/connect_app/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/templates/connect_app/detail.html" />
-        <option value="$PROJECT_DIR$/connect_app/validators.py" />
         <option value="$PROJECT_DIR$/ClassmateConnect/urls.py" />
         <option value="$PROJECT_DIR$/templates/connect_app/signup.html" />
         <option value="$PROJECT_DIR$/templates/connect_app/login.html" />
-        <option value="$PROJECT_DIR$/connect_app/management/commands/populate_db.py" />
         <option value="$PROJECT_DIR$/templates/connect_app/index.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/connect_app/static/connect_app/index.css" />
         <option value="$PROJECT_DIR$/templates/connect_app/changeinfo.html" />
         <option value="$PROJECT_DIR$/templates/connect_app/add_courses.html" />
         <option value="$PROJECT_DIR$/templates/connect_app/remove_courses.html" />
-        <option value="$PROJECT_DIR$/ClassmateConnect/settings.py" />
-        <option value="$PROJECT_DIR$/connect_app/models.py" />
-        <option value="$PROJECT_DIR$/connect_app/forms.py" />
-        <option value="$PROJECT_DIR$/connect_app/urls.py" />
-        <option value="$PROJECT_DIR$/connect_app/views.py" />
         <option value="$PROJECT_DIR$/templates/connect_app/courses_edit.html" />
+        <option value="$PROJECT_DIR$/templates/connect_app/profile.html" />
         <option value="$PROJECT_DIR$/templates/connect_app/index.html" />
         <option value="$PROJECT_DIR$/templates/connect_app/course_index.html" />
         <option value="$PROJECT_DIR$/connect_app/static/connect_app/course_index.css" />
-        <option value="$PROJECT_DIR$/templates/connect_app/profile.html" />
-        <option value="$PROJECT_DIR$/connect_app/static/connect_app/profile.css" />
+        <option value="$PROJECT_DIR$/ClassmateConnect/settings.py" />
+        <option value="$PROJECT_DIR$/connect_app/models.py" />
+        <option value="$PROJECT_DIR$/connect_app/admin.py" />
+        <option value="$PROJECT_DIR$/connect_app/forms.py" />
+        <option value="$PROJECT_DIR$/connect_app/manager.py" />
+        <option value="$PROJECT_DIR$/connect_app/urls.py" />
+        <option value="$PROJECT_DIR$/connect_app/validators.py" />
+        <option value="$PROJECT_DIR$/connect_app/views.py" />
+        <option value="$PROJECT_DIR$/connect_app/management/commands/populate_db.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+    <option name="x" value="196" />
+    <option name="y" value="-10" />
+    <option name="width" value="705" />
+    <option name="height" value="560" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="Update" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -208,26 +171,7 @@
               <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
               <item name="ClassmateConnect" type="462c0819:PsiDirectoryNode" />
               <item name="connect_app" type="462c0819:PsiDirectoryNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassmateConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="connect_app" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassmateConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="connect_app" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassmateConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="connect_app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="connect_app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
@@ -338,6 +282,7 @@
       <workItem from="1555125170443" duration="4648000" />
       <workItem from="1555422287137" duration="4694000" />
       <workItem from="1555431163157" duration="15364000" />
+      <workItem from="1555709354920" duration="3576000" />
     </task>
     <task id="LOCAL-00001" summary="Added Django prototype">
       <created>1553982111421</created>
@@ -525,7 +470,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164803000" />
+    <option name="totallyTimeSpent" value="171859000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,15 +482,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22334754" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14142092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.2554517" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.25742576" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -668,19 +612,6 @@
     <entry file="file://$PROJECT_DIR$/connect_app/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/management/commands/populate_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="33" column="69" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
-          <folding>
-            <element signature="e#77#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/connect_app/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -730,43 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/validators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/connect_app/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,53 +685,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/connect_app/remove_courses.html" />
-    <entry file="file://$PROJECT_DIR$/ClassmateConnect/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/connect_app/courses_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -841,52 +692,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/reset.css">
+    <entry file="file://$PROJECT_DIR$/templates/connect_app/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/profile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="65" column="1" lean-forward="true" selection-start-line="52" selection-end-line="65" selection-end-column="1" />
+        <state relative-caret-position="408">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/course_index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/connect_app/course_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="663">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/connect_app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="187">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/connect_app/profile.html">
+    <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="89" lean-forward="true" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
+        <state relative-caret-position="408">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/reset.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/connect_app/course_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/validators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+          <folding>
+            <element signature="e#3#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="78" column="18" lean-forward="true" selection-start-line="78" selection-end-line="79" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect_app/management/commands/populate_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#77#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassmateConnect/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1194">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding>
+            <element signature="e#317#326#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

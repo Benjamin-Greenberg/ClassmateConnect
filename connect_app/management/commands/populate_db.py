@@ -1,4 +1,4 @@
-# This script will populate the django database with courses from a txt file
+# This script will populate the django database with courses from a the UTK timetables
 from django.core.management import BaseCommand
 from connect_app.models import Course
 from selenium import webdriver
@@ -62,6 +62,6 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         self.web_scraper()
 
-
-
-
+# Populating the database with code:
+# https://eli.thegreenplace.net/2014/02/15/programmatically-populating-a-django-database
+# Using selenium to navigate the internet: https://selenium-python.readthedocs.io/index.html

@@ -2,6 +2,7 @@ from django.contrib.auth.base_user import BaseUserManager
 from django.utils.translation import ugettext_lazy as _
 
 
+# Manager class to handle the creation of custom users and superusers
 class StudentManager(BaseUserManager):
     # Email acts as unique identifier for auth
 
@@ -28,3 +29,6 @@ class StudentManager(BaseUserManager):
 
         # Call create_user to create the super user
         return self.create_user(username, email, password, **extra_fields)
+
+# Django Custom User Model: https://testdriven.io/blog/django-custom-user-model/
+#                           https://wsvincent.com/django-custom-user-model-tutorial/

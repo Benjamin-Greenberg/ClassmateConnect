@@ -2,9 +2,11 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import *
 from .forms import *
-# Register your models here.
 
 
+# Admin Interface for the Student Model
+# Inherits from the UserAdmin class
+# The Student Interface does not yet have the ability to edit password or assign courses
 class StudentAdmin(UserAdmin):
     add_form = StudentCreationForm
     form = StudentChangeForm
@@ -29,6 +31,7 @@ class StudentAdmin(UserAdmin):
     ordering = ('username',)
 
 
+# Admin Interface for the Course model
 class CourseAdmin(admin.ModelAdmin):
     fieldsets = [
         (None, {'fields': ['title']}),
