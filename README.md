@@ -39,11 +39,11 @@ pip3 install -e .
 ```
 
 
-## Running the tests
+## Using Classmate Connect
 
-Explain how to run the automated tests for this system
+In order to use Classmate Connect, you will need to gather information about courses and users. 
 
-### Break down into end to end tests
+### Scraping the course timetable
 
 Explain what these tests test and why
 
@@ -51,9 +51,34 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
+### Administration Use
 
 Explain what these tests test and why
+
+```
+Give an example
+```
+
+### Standard Use
+
+Once you go to the landing page for Classmate Connect, there are three options presented:<br />
+    1. Courses Index - View every course in the database<br />
+    2. Student Login - Use existing user credentials to search for classmates<br />
+    3. Sign Up - Creating a new user<br />
+![image](https://user-images.githubusercontent.com/39277609/56462451-4032f580-6391-11e9-812c-ea4d58183bb4.png)
+
+#### Courses Index
+
+The courses index contains a list of all classes in the database. Each class will direct to a page with more details
+and a list of all the students taking the course.
+
+#### Student Login
+
+![image](https://user-images.githubusercontent.com/39277609/56462757-8c346900-6396-11e9-8b35-e92fbb2a07aa.png)
+
+
+#### Sign Up
+
 
 ```
 Give an example
