@@ -4,8 +4,9 @@ One Paragraph of project description goes here
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
+The following sections will explain how to setup and download Classmate Connect, as well as how to use it with both 
+admin and standard users. This code is not ready for official release and is only guaranteed to work in 
+testing environments. For ease of use, it is best to run this code with and IDE such as PyCharm.
 ### Prerequisites
 
 Follow the steps below to be able to download and run Classmate Connect.
