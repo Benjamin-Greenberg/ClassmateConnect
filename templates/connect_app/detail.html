@@ -11,21 +11,40 @@
     <div id="header">
         <h2>Classmate Connect</h2>
     </div>
-    <div id="container">
+    <div id="container" class="align-left">
         <h2><strong>{{ course.title }}</strong></h2>
-        <ul>
-            <li>{{ course.crn }}</li>
-            <li>{{ course.course_number }}</li>
-            <li>{{ course.section_number }}</li>
-        </ul>
-        <h3>Students</h3>
-        {% if course.students %}
-            <ul>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Info</th>
+            </tr>
+            <tr>
+                <td>Course CRN</td>
+                <td>{{ course.crn }}</td>
+            </tr>
+            <tr>
+                <td>Course Number</td>
+                <td>{{ course.course_number }}</td>
+            </tr>
+            <tr>
+                <td>Course Section</td>
+                <td>{{ course.section_number }}</td>
+            </tr>
+        </table>
+    </div>
+    <div  id="container" class="align-right">
+        <table>
+            <tr>
+                <th>Students</th>
+            </tr>
+            {% if course.students %}
                 {% for student in course.students.all %}
-                    <li> {{ student.username }} </li>
+                <tr>
+                        <td> {{ student.username }} </td>
+                </tr>
                 {% endfor %}
-            </ul>
-        {% endif %}
+            {% endif %}
+        </table>
     </div>
     <div id="footer">
         <h4>Made by Benjamin Greenberg and Daniel Troutman</h4>
