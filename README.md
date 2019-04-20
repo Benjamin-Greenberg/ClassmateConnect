@@ -72,17 +72,18 @@ Once you go to the landing page for Classmate Connect, there are three options p
 The courses index contains a list of all classes in the database. Each class will direct to a page with more details
 and a list of all the students taking the course.
 
+![image](https://user-images.githubusercontent.com/39277609/56462908-0fef5500-6399-11e9-868e-ba9fec0be442.png)
+![image](https://user-images.githubusercontent.com/39277609/56462894-ce5eaa00-6398-11e9-9221-910237f51fbe.png)
+
 #### Student Login
 
-![image](https://user-images.githubusercontent.com/39277609/56462757-8c346900-6396-11e9-8b35-e92fbb2a07aa.png)
-
+The login page is where a user can enter their credential to access their profile. The profile consists of all relevant
+user data as well as a list of classmates paired with the number of similar classes to the user.
 
 #### Sign Up
 
-
-```
-Give an example
-```
+The sign up page allows new users to enter their information and find classmates. Once a user has signed up, they will
+be redirected to the login page, where they can sign in.
 
 ## Deployment
 
