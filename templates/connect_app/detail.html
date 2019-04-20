@@ -11,28 +11,30 @@
     <div id="header">
         <h2>Classmate Connect</h2>
     </div>
-    <div id="container" class="align-left">
+    <div id="container">
         <h2><strong>{{ course.title }}</strong></h2>
-        <table>
-            <tr>
-                <th>Course</th>
-                <th>Info</th>
-            </tr>
-            <tr>
-                <td>Course CRN</td>
-                <td>{{ course.crn }}</td>
-            </tr>
-            <tr>
-                <td>Course Number</td>
-                <td>{{ course.course_number }}</td>
-            </tr>
-            <tr>
-                <td>Course Section</td>
-                <td>{{ course.section_number }}</td>
-            </tr>
-        </table>
+        <div id="details">
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Info</th>
+                </tr>
+                <tr>
+                    <td>Course CRN</td>
+                    <td>{{ course.crn }}</td>
+                </tr>
+                <tr>
+                    <td>Course Number</td>
+                    <td>{{ course.course_number }}</td>
+                </tr>
+                <tr>
+                    <td>Course Section</td>
+                    <td>{{ course.section_number }}</td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <div  id="container" class="align-right">
+    <div  id="students">
         <table>
             <tr>
                 <th>Students</th>
@@ -49,6 +51,5 @@
     <div id="footer">
         <h4>Made by Benjamin Greenberg and Daniel Troutman</h4>
     </div>
-
 </body>
 </html>

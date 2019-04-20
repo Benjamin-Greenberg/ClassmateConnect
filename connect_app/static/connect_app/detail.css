@@ -20,12 +20,42 @@ body{
 
 #container{
     padding-top: 60px;
+
 }
 
 #container h2{
     font-size: 30px;
     margin: 5px;
     color: white;
+}
+
+#details{
+    float: left;
+    width: 50%;
+    margin: 8px;
+}
+
+#students{
+    float: right;
+    width: 40%;
+}
+
+table{
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid #0072C6;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #0072C6;
+    color: white;
+}
+tr:nth-child(odd) {
+    background-color: white;
 }
 
 #footer{
