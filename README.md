@@ -12,16 +12,12 @@ testing environments. For ease of use, it is best to run this code with and IDE 
 
 Follow the steps below to be able to download and run Classmate Connect.
 
-You must have python 3.7 or later installed.
+You must have python 3.7 or later installed. Instructions below are for Debian-based Linux distros
 ```bash
 sudo apt-get install python3
-git clone https://github.com/bgreenb11/ClassmateConnect.git
+sudo apt-get install pip3
 ```
-Depending on your system,use pip3 or pip to install python3 dependencies
-This will call setup.py
-```bash
-pip3 install -e .
-```
+
 Install other dependencies in case setup doesn't cover everything
 ```bash
 pip3 install django, selenium
@@ -29,21 +25,19 @@ pip3 install django, selenium
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Here are the instructions to install ClassmateConnect
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+Clone the repo from github
+```bash
+git clone https://github.com/bgreenb11/ClassmateConnect.git
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Depending on your system,use pip3 or pip to install python3 dependencies
+This will call setup.py
+```bash
+pip3 install -e .
+```
+
 
 ## Running the tests
 
