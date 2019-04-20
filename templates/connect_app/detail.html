@@ -1,24 +1,35 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{{ course.title }} Details</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/detail.css' %}">
 </head>
 <body>
-    <h2><strong>{{ course.title }}</strong></h2>
-    <ul>
-        <li>{{ course.crn }}</li>
-        <li>{{ course.course_number }}</li>
-        <li>{{ course.section_number }}</li>
-    </ul>
-    <h3>Students</h3>
-    {% if course.students %}
+    <div id="header">
+        <h2>Classmate Connect</h2>
+    </div>
+    <div id="container">
+        <h2><strong>{{ course.title }}</strong></h2>
         <ul>
-            {% for student in course.students.all %}
-                <li> {{ student.username }} </li>
-            {% endfor %}
+            <li>{{ course.crn }}</li>
+            <li>{{ course.course_number }}</li>
+            <li>{{ course.section_number }}</li>
         </ul>
-    {% endif %}
+        <h3>Students</h3>
+        {% if course.students %}
+            <ul>
+                {% for student in course.students.all %}
+                    <li> {{ student.username }} </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    <div id="footer">
+        <h4>Made by Benjamin Greenberg and Daniel Troutman</h4>
+    </div>
 
 </body>
 </html>
