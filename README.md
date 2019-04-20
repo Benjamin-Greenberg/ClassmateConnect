@@ -7,6 +7,7 @@ One Paragraph of project description goes here
 The following sections will explain how to setup and download Classmate Connect, as well as how to use it with both 
 admin and standard users. This code is not ready for official release and is only guaranteed to work in 
 testing environments. For ease of use, it is best to run this code with and IDE such as PyCharm.
+
 ### Prerequisites
 
 Follow the steps below to be able to download and run Classmate Connect.
@@ -14,6 +15,16 @@ Follow the steps below to be able to download and run Classmate Connect.
 You must have python 3.7 or later installed.
 ```bash
 sudo apt-get install python3
+git clone https://github.com/bgreenb11/ClassmateConnect.git
+```
+Depending on your system,use pip3 or pip to install python3 dependencies
+This will call setup.py
+```bash
+pip3 install -e .
+```
+Install other dependencies in case setup doesn't cover everything
+```bash
+pip3 install django, selenium
 ```
 
 ### Installing
