@@ -66,7 +66,7 @@ _*_ Depending on the number of subjects and courses, the web-scraper could take
 up to several minutes to finish
 ### Administration Use
 
-*To access the admin site, simply go to the admin page by typing /admin after the domain name for example
+* To access the admin site, simply go to the admin page by typing /admin after the domain name for example
 ```
 https://127.0.0.1:8000/admin
 ```
