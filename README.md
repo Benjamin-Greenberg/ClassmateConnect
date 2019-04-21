@@ -127,9 +127,11 @@ user data as well as a list of classmates paired with the number of similar clas
 The sign up page allows new users to enter their information and find classmates. Once a user has signed up, they will
 be redirected to the login page, where they can sign in.
 
-## Deployment
+## Known Bugs
+* It is not possible to add/remove classes for a student model on the admin's page
+* Djagno testing environment occaisionally throws error when loggin in, cause is currently unknown
+* No option to change/recover password, will be added later
 
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
