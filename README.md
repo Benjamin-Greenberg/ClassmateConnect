@@ -73,7 +73,7 @@ https://127.0.0.1:8000/admin
 And you will be directed to the admin login page*<br />
 ![image](https://user-images.githubusercontent.com/33168761/56465029-a0428f80-63c3-11e9-8364-7ccfe5cc5f63.png)
 <br />
-_*_You must have created a super user or you will not be able to access the admin page without another admin's login
+*You must have created a super user or you will not be able to access the admin page without another admin's login
 
 * After logging in, you will see the admin index, where you can access the Student and Course models.
 The Group model is provided by Django by default and is not in use at the moment.
