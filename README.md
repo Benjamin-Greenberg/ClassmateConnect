@@ -70,7 +70,7 @@ up to several minutes to finish
 ```
 https://127.0.0.1:8000/admin
 ```
-And you will be directed to the admin login page*
+And you will be directed to the admin login page*<br />
 ![image](https://user-images.githubusercontent.com/33168761/56465029-a0428f80-63c3-11e9-8364-7ccfe5cc5f63.png)
 <br />
 _*_You must have created a super user or you will not be able to access the admin page without another admin's login
