@@ -32,7 +32,7 @@ Clone the repo from github
 git clone https://github.com/bgreenb11/ClassmateConnect.git
 ```
 
-Depending on your system,use pip3 or pip to install python3 dependencies
+Depending on your system, use pip3 or pip to install python3 dependencies
 This will call setup.py
 ```bash
 pip3 install -e .
@@ -45,19 +45,61 @@ In order to use Classmate Connect, you will need to gather information about cou
 
 ### Scraping the course timetable
 
-Explain what these tests test and why
-
+The web-scraper for this project is built to scrape the UTK public timetables. In order to use
+this to gather course info from other institutions, they must use a similar format 
+for their public timetables, and the url to the first page and desired semester must be
+changed in connect_app/management/commands/populate_db.py as shown below
 ```
-Give an example
+# Url goes in here
+driver.get("https://bannerssb.utk.edu/kbanpr/bwckschd.p_disp_dyn_sched")
+select = Select(driver.find_element_by_name("p_term"))
+# Semester goes here
+select.select_by_visible_text("Fall Sem 2019")
+driver.find_element_by_xpath("//input[@type='submit']").click()
 ```
 
+* To use the web-scraper, simply run the following command in the terminal*
+```bash
+python3 manage.py populate_db
+```
+_*_ Depending on the number of subjects and courses, the web-scraper could take 
+up to several minutes to finish
 ### Administration Use
 
-Explain what these tests test and why
+*To access the admin site, simply go to the admin page by typing /admin after the domain name for example
+```
+https://127.0.0.1:8000/admin
+```
+And you will be directed to the admin login page*
+![image](https://user-images.githubusercontent.com/33168761/56465029-a0428f80-63c3-11e9-8364-7ccfe5cc5f63.png)
+<br />
+_*_You must have created a super user or you will not be able to access the admin page without another admin's login
 
-```
-Give an example
-```
+* After logging in, you will see the admin index, where you can access the Student and Course models.
+The Group model is provided by Django by default and is not in use at the moment.
+![image](https://user-images.githubusercontent.com/33168761/56465059-35de1f00-63c4-11e9-8572-49a8d5b209ca.png)
+Clicking on connect_app will send you to the connect_app page and its models will be the only thing displayed
+
+* Clicking on the Course model will send you to the page with all Course models
+![image](https://user-images.githubusercontent.com/33168761/56465068-72aa1600-63c4-11e9-8888-2ba750134da6.png)
+Here you can: <br />
+1) Select multiple courses, and then go to actions, where currently the only option is to delete
+the selected course models
+2) Select the add course option in the upper-right corner
+
+* If you select the add course option, you'll be redirected here and be able to create a new Course model
+![image](https://user-images.githubusercontent.com/33168761/56465095-07ad0f00-63c5-11e9-8bd0-6f33ba4d6a9f.png)
+You can specify the Course model's title, crn, course number, and section number, as well as the students 
+that have already been created to add to the Course model's students field
+
+* The admin page for the Student models is similar to the Course model's admin page
+![image](https://user-images.githubusercontent.com/33168761/56465113-7722fe80-63c5-11e9-8a8b-2ca40dfbd04b.png)
+There is a search bar on this page that is currently unavailable on the Course model's admin page
+
+* Adding a new Student model is similar to adding a Course model
+![image](https://user-images.githubusercontent.com/33168761/56465140-e4369400-63c5-11e9-931e-70bad4fa137f.png)
+Here you can specify the Student model's username, first name, last name, encrypted password, and whether
+they have admin status or not. Do not unselect the active option.
 
 ### Standard Use
 
@@ -91,23 +133,14 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [Django](https://docs.djangoproject.com/en/2.2/) - The backend web framework used
+* [SQLite](https://www.sqlite.org/index.html) - Database _-Temp_
+* [Python](https://www.python.org/) - Main Language
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Benjamin Greenberg**  - [bgreenb11](https://github.com/bgreenb11)
+* **Daniel Troutman** - [daniel-troutman](https://github.com/daniel-troutman)
 
 ## License
 
