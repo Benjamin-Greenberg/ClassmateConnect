@@ -7,6 +7,17 @@ body{
     height: 100%;
 }
 
+#home {
+    text-decoration: none;
+    font-size: 40px;
+    background-color: #0072C6;
+    color: white;
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px 3px 5px 3px;
+    display: inline-block;
+    margin: 3px;
+}
+
 #header{
     position: absolute;
     width: 100%;

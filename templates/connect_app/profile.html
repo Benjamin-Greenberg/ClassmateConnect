@@ -8,7 +8,7 @@
 
 {% block body %}
     <div id="header">
-            <h2>Classmate Connect</h2>
+        <a href="{% url 'connect_app:index' %}"><h2 id="home">Classmate Connect</h2> </a>
     </div>
     <div id="container">
         {% if student.courses %}
@@ -41,7 +41,7 @@
         <h2>Courses Page</h2>
         <a id="btn" href="{% url 'connect_app:courses' %}"> Courses Index </a>|
         <a id="btn" href="{% url 'connect_app:changeinfo' %}">Change Information</a>|
-        <a id="btn" href="{% url "logout" %}" class="button">Logout</a>
+        <a id="btn" href="{% url "logout" %}">Logout</a>
     </div>
 
 {% endblock %}

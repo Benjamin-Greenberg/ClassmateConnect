@@ -1,18 +1,26 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block head %}
     <title>Student Login</title>
+    <meta charset="UTF-8">
+    <title>Classmate Connect Index</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/login.css' %}">
 {% endblock %}
 
 {% block body %}
-<div class="container">
-    <h1>Welcome</h1>
-    <p>This is the student login page</p>
-    <h2>Login</h2>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-    </form>
-</div>
+    <div id="header">
+        <a href="{% url 'connect_app:index' %}"><h2 id="home">Classmate Connect</h2> </a>
+    </div>
+    <div id="container">
+        <h1>Welcome</h1>
+        <p>This is the student login page</p>
+        <h2>Login</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+    </div>
 {% endblock %}

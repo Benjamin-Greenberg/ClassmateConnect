@@ -5,14 +5,17 @@
 {% endblock %}
 
 {% block body %}
-<div class="container">
-    <h1>Welcome</h1>
-    <p>{{ message }}</p>
-    <h2>Courses</h2>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Finish</button>
-    </form>
-</div>
+    <div id="header">
+        <a href="{% url 'connect_app:index' %}"><h2 id="home">Classmate Connect</h2> </a>
+    </div>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>{{ message }}</p>
+        <h2>Courses</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Finish</button>
+        </form>
+    </div>
 {% endblock %}
