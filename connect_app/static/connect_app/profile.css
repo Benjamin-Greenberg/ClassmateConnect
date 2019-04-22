@@ -51,10 +51,22 @@ body{
     color: white;
 }
 
-#classmates li{
-    font-size: 15px;
-    margin: 5px;
+table{
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid #0072C6;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #0072C6;
     color: white;
+}
+tr:nth-child(odd) {
+    background-color: white;
 }
 
 #footer h2{

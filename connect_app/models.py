@@ -3,8 +3,7 @@ from django.contrib.auth.models import AbstractUser
 from django.utils.translation import ugettext_lazy as _
 from . import validators as v
 from .manager import StudentManager
-from heapq import nsmallest
-from collections import OrderedDict
+# from heapq import nsmallest
 
 
 # Course model to represent each course offered
