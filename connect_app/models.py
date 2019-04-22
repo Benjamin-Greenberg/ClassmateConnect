@@ -4,6 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 from . import validators as v
 from .manager import StudentManager
 from heapq import nsmallest
+from collections import OrderedDict
 
 
 # Course model to represent each course offered
@@ -69,9 +70,15 @@ class Student(AbstractUser):
             minDisplay = 5
 
         # Turn the classmates dictionary into a heap and pop the most similar classmates from the heap
-        heap = [(-value, key) for key, value in classmates.items()]
-        self.temp_classmates = nsmallest(minDisplay, heap)
-        self.temp_classmates = [(key, -value) for value, key in self.temp_classmates]
+
+        # heap = [(-value, key) for key, value in classmates.items()]
+        # self.temp_classmates = nsmallest(minDisplay, heap)
+        heap = OrderedDict()
+        for i in range(0, minDisplay):
+            for key, value in classmates.items():
+                heap[value] = key
+
+        self.temp_classmates = [(key, value) for (value, key) in heap.items()]
 
 # ManytoMany Field Information: https://www.revsys.com/tidbits/tips-using-djangos-manytomanyfield/
 # Django Custom User Model: https://testdriven.io/blog/django-custom-user-model/
