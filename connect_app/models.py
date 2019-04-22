@@ -75,7 +75,7 @@ class Student(AbstractUser):
         # heap = [(-value, key) for key, value in classmates.items()]
         # self.temp_classmates = nsmallest(minDisplay, heap)
 
-        # Heap method is having issues at the moment, so an ordered dict is being used instead
+        # Heap method is having issues at the moment, so a sorted list is being used instead
         heap = sorted(classmates.items(), key=lambda kv: kv[1], reverse=True)
         for i in range(0, minDisplay):
             self.temp_classmates.append((heap[i][0], heap[i][1]))
