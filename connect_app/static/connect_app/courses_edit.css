@@ -29,6 +29,12 @@ body{
     padding-left: 10px;
 }
 
+#container h2{
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+}
+
 #footer{
     position: absolute;
     left: 0;
