@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import *
 from .forms import *
+from django.forms import SelectMultiple
 
 
 # Admin Interface for the Student Model
@@ -17,7 +18,9 @@ class StudentAdmin(UserAdmin):
         (None, {'fields': ('username', 'email', 'password')}),
         ('Personal Information', {'fields': ['first_name', 'last_name']}),
         ('Permissions', {'fields': ('is_staff', 'is_active')}),
+        # ('Courses', {'fields': ('courses',)})
     )
+    # formfield_overrides = {models.ManyToManyField: {'widget': SelectMultiple(attrs={'size': '10'})}, }
 
     add_fieldsets = (
         (None, {

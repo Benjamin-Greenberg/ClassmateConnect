@@ -10,21 +10,19 @@
     <div id="header">
             <h2>Classmate Connect</h2>
     </div>
-    <h2>Courses Page</h2>
-    <a href="{% url 'connect_app:courses' %}"> Courses Index </a>
-    <div class="align-left">
+    <div id="container">
         {% if student.courses %}
             <h3>{{ student.first_name }} {{ student.last_name }}'s Courses:</h3>
             <ul>
                 {% for course in student.courses.all %}
-                    <li><a href="{% url 'connect_app:detail' course.crn %}">{{ course.title }}</a></li>
+                    <li><a id="btn" href="{% url 'connect_app:detail' course.crn %}">{{ course.title }}</a></li>
                 {% endfor %}
             </ul>
         {% endif %}
-        <a href="{% url 'connect_app:add_courses' %}">Add Courses</a> |
-        <a href="{% url 'connect_app:remove_courses' %}">Remove Courses</a> |
+        <a id="btn" href="{% url 'connect_app:add_courses' %}">Add Courses</a> |
+        <a id="btn" href="{% url 'connect_app:remove_courses' %}">Remove Courses</a>
     </div>
-    <div class="align-right">
+    <div id="classmates">
             <h3>Students That Share Classes with You:</h3>
             <ul>
                 {% for classmate, classes in student.temp_classmates %}
@@ -32,7 +30,11 @@
                 {% endfor %}
             </ul>
     </div>
-    <a href="{% url 'connect_app:changeinfo' %}">Change Information</a>|
-    <a href="{% url "logout" %}" class="button">Logout</a>
+    <div id="footer">
+        <h2>Courses Page</h2>
+        <a id="btn" href="{% url 'connect_app:courses' %}"> Courses Index </a>|
+        <a id="btn" href="{% url 'connect_app:changeinfo' %}">Change Information</a>|
+        <a id="btn" href="{% url "logout" %}" class="button">Logout</a>
+    </div>
 
 {% endblock %}
