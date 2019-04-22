@@ -50,6 +50,7 @@ class Student(AbstractUser):
     # Function to build the list of students w/ similar schedules
     def connect(self):
         classmates = {}
+        self.temp_classmates = []
 
         # Build the classmates dictionary with with value being the number of classes taken together
         # and the key being the classmate
@@ -75,12 +76,10 @@ class Student(AbstractUser):
         # self.temp_classmates = nsmallest(minDisplay, heap)
 
         # Heap method is having issues at the moment, so an ordered dict is being used instead
-        heap = OrderedDict()
+        heap = sorted(classmates.items(), key=lambda kv: kv[1], reverse=True)
         for i in range(0, minDisplay):
-            for key, value in classmates.items():
-                heap[value] = key
+            self.temp_classmates.append((heap[i][0], heap[i][1]))
 
-        self.temp_classmates = [(key, value) for (value, key) in heap.items()]
 
 # ManytoMany Field Information: https://www.revsys.com/tidbits/tips-using-djangos-manytomanyfield/
 # Django Custom User Model: https://testdriven.io/blog/django-custom-user-model/
