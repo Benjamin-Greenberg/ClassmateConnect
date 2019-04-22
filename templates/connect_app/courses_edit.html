@@ -1,15 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block head %}
     <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/courses_edit.css' %}">
 {% endblock %}
 
 {% block body %}
     <div id="header">
         <a href="{% url 'connect_app:index' %}"><h2 id="home">Classmate Connect</h2> </a>
     </div>
-    <div class="container">
-        <h1>Welcome</h1>
+    <div id="container">
         <p>{{ message }}</p>
         <h2>Courses</h2>
         <form method="POST">
