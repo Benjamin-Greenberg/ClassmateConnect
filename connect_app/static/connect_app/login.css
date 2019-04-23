@@ -27,6 +27,13 @@ body{
 #container{
     padding-top: 60px;
     padding-left: 10px;
+    color: white;
+}
+
+#container h2{
+    font-size: 30px;
+    margin: 5px;
+    color: white;
 }
 
 #footer{
