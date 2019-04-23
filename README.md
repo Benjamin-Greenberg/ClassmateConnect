@@ -119,9 +119,10 @@ and a list of all the students taking the course.
 
 #### Student Login
 
-The login page is where a user can enter their credential to access their profile. The profile consists of all relevant
+The login page is where a user can enter their credentials to access their profile. The profile consists of all relevant
 user data as well as a list of classmates paired with the number of similar classes to the user.
 
+The user can add courses and remove courses at will to fit their current schedule.
 #### Sign Up
 
 The sign up page allows new users to enter their information and find classmates. Once a user has signed up, they will
