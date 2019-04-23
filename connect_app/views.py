@@ -68,7 +68,7 @@ def add_courses(request):
         context = {
             'form': AddCourses,
             'title': "Add Courses",
-            'message': "Add courses here.",
+            'message': "Add Courses",
         }
         return render(request, 'connect_app/courses_edit.html', context)
 
@@ -92,7 +92,7 @@ def remove_courses(request):
         context = {
             'form': form,
             'title': "Remove Courses",
-            'message': "Remove courses here.",
+            'message': "Remove Courses",
         }
         return render(request, 'connect_app/courses_edit.html', context)
 
