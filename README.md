@@ -107,6 +107,7 @@ Once you go to the landing page for Classmate Connect, there are three options p
     1. Courses Index - View every course in the database<br />
     2. Student Login - Use existing user credentials to search for classmates<br />
     3. Sign Up - Creating a new user<br />
+    
 ![image](https://user-images.githubusercontent.com/39277609/56462451-4032f580-6391-11e9-812c-ea4d58183bb4.png)
 
 #### Courses Index
@@ -120,17 +121,25 @@ and a list of all the students taking the course.
 #### Student Login
 
 The login page is where a user can enter their credentials to access their profile. The profile consists of all relevant
-user data as well as a list of classmates paired with the number of similar classes to the user.
+user data as well as a list of classmates paired with the number of similar classes to the user. 
+Users can also add courses and remove courses at will to fit their current schedule.
 
-The user can add courses and remove courses at will to fit their current schedule.
+![image](https://user-images.githubusercontent.com/39277609/56607966-bc1e7f00-65d7-11e9-874b-4276d769df3a.png)
+![image](https://user-images.githubusercontent.com/39277609/56608126-115a9080-65d8-11e9-8460-619404ac2a78.png)
+
+
+Users can also add courses and remove courses at will to fit their current schedule.
 #### Sign Up
 
 The sign up page allows new users to enter their information and find classmates. Once a user has signed up, they will
 be redirected to the login page, where they can sign in.
 
+![image](https://user-images.githubusercontent.com/39277609/56609444-1e2cb380-65db-11e9-99d7-184685f766d4.png)
+
+
 ## Known Bugs
 * It is not possible to add/remove classes for a student model on the admin's page
-* Djagno testing environment occaisionally throws error when loggin in, cause is currently unknown
+* Django testing environment occasionally throws error when logging in, cause is currently unknown
 * No option to change/recover password, will be added later
 
 

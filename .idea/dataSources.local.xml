@@ -9,5 +9,9 @@
       <auth-required>false</auth-required>
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
+    <data-source name="db" uuid="96852d36-6de0-4abd-9025-a9bc94230a7e">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <auth-required>false</auth-required>
+    </data-source>
   </component>
 </project>
