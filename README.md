@@ -1,6 +1,6 @@
 # ClassmateConnect
 
-One Paragraph of project description goes here
+Classmate Connect is a website designed to match classmates based on the number of shared classes between them. If someone knows that someone shares many classes with them, it gives them a potential partner for projects or someone to communicate with outside of class (walking between classes, hoimework help, etc). Classmate Connect assists in this area because it takes away the hassle of finding someone with the same classes. While the classes are added by the administrator, it is up to the students to sign-up. The more students that sign up, the more likely to find someone with shared classes.
 
 ## Getting Started
 
@@ -103,6 +103,8 @@ they have admin status or not. Do not unselect the active option.
 
 ### Standard Use
 
+The site is hosted locally, so it is accessed at https://127.0.0.1:8000
+
 Once you go to the landing page for Classmate Connect, there are three options presented:<br />
     1. Courses Index - View every course in the database<br />
     2. Student Login - Use existing user credentials to search for classmates<br />
@@ -154,12 +156,4 @@ be redirected to the login page, where they can sign in.
 * **Benjamin Greenberg**  - [bgreenb11](https://github.com/bgreenb11)
 * **Daniel Troutman** - [daniel-troutman](https://github.com/daniel-troutman)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
