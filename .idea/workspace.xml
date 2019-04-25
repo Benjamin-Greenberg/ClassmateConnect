@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecc48d19-a832-455b-b700-24a2c9cef1f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/connect_app/static/connect_app/signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ClassmateConnect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ClassmateConnect.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ecc48d19-a832-455b-b700-24a2c9cef1f1" name="Default Changelist" comment="Fixed sorting issue, added profile css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connect_app/static/connect_app/courses_edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/static/connect_app/courses_edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connect_app/static/connect_app/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/static/connect_app/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connect_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect_app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/connect_app/courses_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/connect_app/courses_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/connect_app/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/connect_app/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/connect_app/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/connect_app/signup.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,55 +47,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/connect_app/login.html">
+        <entry file="file://$PROJECT_DIR$/connect_app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="34">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/login.css">
+        <entry file="file://$PROJECT_DIR$/connect_app/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/course_index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="38" selection-end-line="42" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/courses_edit.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/connect_app/signup.html">
+        <entry file="file://$PROJECT_DIR$/connect_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connect_app/static/connect_app/signup.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="17">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -198,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,26 +187,7 @@
               <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
               <item name="ClassmateConnect" type="462c0819:PsiDirectoryNode" />
               <item name="connect_app" type="462c0819:PsiDirectoryNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassmateConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="connect_app" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassmateConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="connect_app" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClassmateConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="connect_app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="connect_app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ClassmateConnect" type="b2602c69:ProjectViewProjectNode" />
@@ -255,7 +204,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -686,7 +634,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207892000" />
+    <option name="totallyTimeSpent" value="207933000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -698,9 +646,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23304157" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1494638" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -917,8 +865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connect_app/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="153">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -968,7 +916,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connect_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="34">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -1011,9 +959,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mailclient/program.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../mailclient/program.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1026,8 +972,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connect_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
+        <state relative-caret-position="17">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
         </state>
       </provider>
     </entry>
