@@ -42,6 +42,11 @@ pip3 install -e .
 ## Using Classmate Connect
 
 In order to use Classmate Connect, you will need to gather information about courses and users. 
+* You will need to create a superuser with the following command before continuing
+
+```bash
+python3 manage.py createsuperuser
+```
 
 ### Scraping the course timetable
 
