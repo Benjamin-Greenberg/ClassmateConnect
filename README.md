@@ -1,6 +1,6 @@
 # ClassmateConnect
 
-One Paragraph of project description goes here
+Classmate Connect is a website designed to match classmates based on the number of shared classes between them. If someone knows that someone shares many classes with them, it gives them a potential partner for projects or someone to communicate with outside of class (walking between classes, hoimework help, etc). Classmate Connect assists in this area because it takes away the hassle of finding someone with the same classes. While the classes are added by the administrator, it is up to the students to sign-up. The more students that sign up, the more likely to find someone with shared classes.
 
 ## Getting Started
 
@@ -103,10 +103,13 @@ they have admin status or not. Do not unselect the active option.
 
 ### Standard Use
 
+The site is hosted locally, so it is accessed at https://127.0.0.1:8000
+
 Once you go to the landing page for Classmate Connect, there are three options presented:<br />
     1. Courses Index - View every course in the database<br />
     2. Student Login - Use existing user credentials to search for classmates<br />
     3. Sign Up - Creating a new user<br />
+    
 ![image](https://user-images.githubusercontent.com/39277609/56462451-4032f580-6391-11e9-812c-ea4d58183bb4.png)
 
 #### Courses Index
@@ -120,17 +123,25 @@ and a list of all the students taking the course.
 #### Student Login
 
 The login page is where a user can enter their credentials to access their profile. The profile consists of all relevant
-user data as well as a list of classmates paired with the number of similar classes to the user.
+user data as well as a list of classmates paired with the number of similar classes to the user. 
+Users can also add courses and remove courses at will to fit their current schedule.
 
-The user can add courses and remove courses at will to fit their current schedule.
+![image](https://user-images.githubusercontent.com/39277609/56607966-bc1e7f00-65d7-11e9-874b-4276d769df3a.png)
+![image](https://user-images.githubusercontent.com/39277609/56608126-115a9080-65d8-11e9-8460-619404ac2a78.png)
+
+
+Users can also add courses and remove courses at will to fit their current schedule.
 #### Sign Up
 
 The sign up page allows new users to enter their information and find classmates. Once a user has signed up, they will
 be redirected to the login page, where they can sign in.
 
+![image](https://user-images.githubusercontent.com/39277609/56609444-1e2cb380-65db-11e9-99d7-184685f766d4.png)
+
+
 ## Known Bugs
 * It is not possible to add/remove classes for a student model on the admin's page
-* Djagno testing environment occaisionally throws error when loggin in, cause is currently unknown
+* Django testing environment occasionally throws error when logging in, cause is currently unknown
 * No option to change/recover password, will be added later
 
 
@@ -145,12 +156,4 @@ be redirected to the login page, where they can sign in.
 * **Benjamin Greenberg**  - [bgreenb11](https://github.com/bgreenb11)
 * **Daniel Troutman** - [daniel-troutman](https://github.com/daniel-troutman)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
