@@ -31,7 +31,10 @@ class Command(BaseCommand):
         return _
 
     def web_scraper(self):
-        driver = webdriver.Chrome(os.getcwd() + "\\chromedriver.exe")
+        options = webdriver.ChromeOptions()
+        options.headless = True
+
+        driver = webdriver.Chrome(options=options, executable_path=os.getcwd() + "\\chromedriver.exe")
 
         # Entry page
         driver.get("https://bannerssb.utk.edu/kbanpr/bwckschd.p_disp_dyn_sched")
