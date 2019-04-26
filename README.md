@@ -162,3 +162,8 @@ be redirected to the login page, where they can sign in.
 * **Daniel Troutman** - [daniel-troutman](https://github.com/daniel-troutman)
 
 ## Acknowledgments
+* [ManytoMany Field Information](https://www.revsys.com/tidbits/tips-using-djangos-manytomanyfield/) 
+* [Django Custom User Model](https://testdriven.io/blog/django-custom-user-model/)
+* [Django Custom User Model](https://wsvincent.com/django-custom-user-model-tutorial/)
+* [Django Documentation](https://docs.djangoproject.com/en/2.2/)
+* [Multiple Select Field](https://stackoverflow.com/questions/15393134/django-how-can-i-create-a-multiple-select-form)
