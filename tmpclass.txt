@@ -1,6 +1,0 @@
-42775 Intro_Computers/Computing COSC_100 001
-42776 Introduction/Computer_Science COSC_102 001
-48926 Computer_Organization COSC_130 003
-48928 Computer_Organization COSC_130 004
-44988 Data_Structures/Algorithms_I COSC_140 003
-42783 Data_Structures/Algorithms_II COSC_302 001

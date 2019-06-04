@@ -1,5 +1,10 @@
 # This page contains custom forms for ClassmateConnect
-from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.contrib.auth.forms import (
+    UserCreationForm,
+    UserChangeForm,
+    PasswordChangeForm,
+    PasswordResetForm
+)
 from django import forms
 from .models import *
 
@@ -9,7 +14,10 @@ class StudentCreationForm(UserCreationForm):
 
     class Meta(UserCreationForm):
         model = Student
-        fields = ('username', 'email', 'first_name', 'last_name')
+        fields = ('username',
+                  'email',
+                  'first_name',
+                  'last_name')
 
 
 # Form for users to change their information
@@ -17,7 +25,10 @@ class StudentChangeForm(UserChangeForm):
 
     class Meta:
         model = Student
-        fields = ('username', 'email', 'first_name', 'last_name')
+        fields = ('username',
+                  'email',
+                  'first_name',
+                  'last_name')
 
 
 # Form to allow users to add any course to their courses field
@@ -43,3 +54,4 @@ class RemoveCourses(forms.Form):
             widget=forms.CheckboxSelectMultiple,
             choices=self.options
         )
+

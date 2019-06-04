@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <title>Student Profile</title>
+{% endblock %}
+
+{% block body %}
+{% if student.courses %}
+    <h3>{{ student.first_name }} {{ student.last_name }}'s Courses:</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card-columns">
+                    {% for course in student.courses.all %}
+                        <a id="btn" href="{% url 'connect_app:detail' course.crn %}">
+                            <div class="card">
+                                <h5 class="card-title">{{ course.title }}</h5>
+                                <h6 class="card-subtitle">{{ course.course_number }}</h6>
+                                <p class="card-text">Section {{ course.section_number }} - {{ course.crn }}</p>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+                <div class="btn-group">
+                    <a class="btn btn-success" href="{% url 'connect_app:add_courses' %}">Add Courses</a>
+                    <a class="btn btn-danger" href="{% url 'connect_app:remove_courses' %}">Remove Courses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+    <div class="mt-5">
+    {% if student.temp_classmates %}
+            <h3>Students That Share Classes with You:</h3>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Student</th>
+                        <th scope="col">Number of Shared Classes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for classmate, classes in student.temp_classmates %}
+                        <tr>
+                            <td>{{ classmate.first_name }} {{ classmate.last_name }}</td>
+                            <td>{{ classes }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    {%  endif %}
+    </div>
+    <div id="footer">
+        <h2>Courses Page</h2>
+        <a id="btn" href="{% url 'connect_app:courses' %}"> Courses Index </a>|
+        <a id="btn" href="{% url 'connect_app:edit_profile' %}">Change Information</a>|
+        <a id="btn" href="{% url "logout" %}">Logout</a>
+    </div>
+
+{% endblock %}

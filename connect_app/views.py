@@ -2,6 +2,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from django.urls import reverse_lazy
+from django.contrib.auth import update_session_auth_hash
 from .models import *
 from .forms import *
 
@@ -44,10 +45,31 @@ class SignUp(generic.CreateView):
 
 
 # Student Change Info Page
-class ChangeInfo(generic.CreateView):
-    form_class = StudentChangeForm
-    success_url = reverse_lazy('profile')
-    template_name = 'connect_app/changeinfo.html'
+def edit_profile(request):
+    form = StudentChangeForm(request.POST or None, instance=request.user)
+    if form.is_valid():
+        form.save()
+        return redirect("/profile")
+
+    template_name = 'connect_app/edit_profile.html'
+    context = {
+        'form': form,
+    }
+    return render(request, template_name, context)
+
+
+def change_password(request):
+    form = PasswordChangeForm(data=request.POST or None, user=request.user)
+
+    if form.is_valid():
+        form.save()
+        update_session_auth_hash(request, form.user)
+        return redirect("/profile")
+
+    template_name = "connect_app/edit_profile.html"
+    context = {'form': form}
+
+    return render(request, template_name, context)
 
 
 # Student Add Courses Form Page
@@ -99,6 +121,3 @@ def remove_courses(request):
 # Information used in this page
 # https://stackoverflow.com/questions/15393134/django-how-can-i-create-a-multiple-select-form
 # Django Documentation: https://docs.djangoproject.com/en/2.1/
-
-
-

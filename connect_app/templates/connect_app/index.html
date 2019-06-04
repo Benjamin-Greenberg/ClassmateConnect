@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Classmate Connect Index</title>
+    </head>
+    <body>
+    {% block body %}
+        <div id="header">
+            <a href="{% url 'connect_app:index' %}"><h2 id="home">Classmate Connect</h2> </a>
+        </div>
+        <div id="container">
+            <div id="menu">
+                <ul>
+                    <li><a href="{% url 'connect_app:courses' %}"><button id="btn"> Courses Index </button></a></li>
+                    {% if request.user.is_authenticated %}
+                        <li>Hi {{ request.user.username }}!</li>
+                        <li><a href="{% url 'logout' %}"><button id="btn"> Student Logout </button></a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}"><button id="btn"> Student Login </button></a></li>
+                        <li><a href="{% url 'connect_app:signup' %}"><button id="btn"> Sign Up </button></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    {%  endblock %}
+    </body>
+</html>

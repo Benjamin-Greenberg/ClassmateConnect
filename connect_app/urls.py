@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 from django.contrib.auth.views import LoginView
 from . import views
 
@@ -17,7 +17,9 @@ urlpatterns = [
     # Student Profile Page
     path('profile/', views.profile, name='profile'),
     # Student Change Info Page
-    path('changeinfo/', views.ChangeInfo.as_view(), name='changeinfo'),
+    path('edit_profile/', views.edit_profile, name='edit_profile'),
+    # Change Password Page
+    re_path(r'^password/$', views.change_password, name='password_change'),
     # Add Courses From Student Perspective
     path('add_courses/', views.add_courses, name='add_courses'),
     # Remove Courses From Student Perspective

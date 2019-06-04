@@ -2,11 +2,9 @@
 {% load static %}
 
 {% block head %}
-    <title>Student Login</title>
-    <meta charset="UTF-8">
-    <title>Classmate Connect Index</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/reset.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/login.css' %}">
+    <title>Student Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'connect_app/css/signup.css' %}">
 {% endblock %}
 
 {% block body %}
@@ -14,14 +12,14 @@
         <a href="{% url 'connect_app:index' %}"><h2 id="home">Classmate Connect</h2> </a>
     </div>
     <div id="container">
-        <h2>Login</h2>
+        <h2>Sign Up Here</h2>
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit">Login</button>
+            <button type="submit">Sign Up</button>
         </form>
+    </div>
     <div id="footer">
         <h4>Made by Benjamin Greenberg and Daniel Troutman</h4>
-    </div>
     </div>
 {% endblock %}
